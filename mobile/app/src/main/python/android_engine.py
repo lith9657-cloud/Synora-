@@ -34,9 +34,9 @@ def start_server(home: str, port: int = 8765) -> bool:
 
         # APK contents are read-only: persist the learned lexicon privately.
         import sys
-    sys.path.insert(0, os.path.join(os.path.dirname(__file__), "tools"))
+        sys.path.insert(0, os.path.join(os.path.dirname(__file__), "tools"))
 
-    import translation_core
+        import translation_core
         translation_core._LEX_PATH = os.path.join(data_dir, "lexicon_pairs.jsonl")
 
         import webmind
