@@ -24,7 +24,7 @@ android {
     sourceSets {
         getByName("main") {
             // Reuse the existing web interface without changing its source.
-            assets.srcDirs("src/main/assets", "../../synora19_web")
+            assets.srcDirs("src/main/assets")
         }
     }
 
