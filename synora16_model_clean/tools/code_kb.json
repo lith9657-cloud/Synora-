@@ -1,0 +1,811 @@
+[
+ {
+  "q": "كيف أنشئ مجلداً جديداً في لينكس؟",
+  "re": "ما أمر إنشاء مجلد جديد؟",
+  "v": "أريد صنع مجلد من الطرفية",
+  "answer": "استخدم الأمر:\nmkdir اسم_المجلد\nولإنشاء مجلد متداخل دفعة واحدة:\nmkdir -p مسار/المجلد",
+  "tokens": [
+   "mkdir"
+  ],
+  "obj": "إنشاء مجلد جديد",
+  "en": {
+   "q": "How do I create a new folder?",
+   "re": "What is the command to make a directory?",
+   "v": "I want a new folder",
+   "answer": "Use:\nmkdir folder_name\nNested at once: mkdir -p path/folder"
+  }
+ },
+ {
+  "q": "كيف أحذف ملفاً في لينكس؟",
+  "re": "ما أمر حذف الملفات؟",
+  "v": "أريد إزالة ملف عبر الطرفية",
+  "answer": "استخدم:\nrm اسم_الملف\nولحذف مجلد بمحتوياته:\nrm -r اسم_المجلد",
+  "tokens": [
+   "rm"
+  ],
+  "obj": "حذف ملف",
+  "en": {
+   "q": "How do I delete a file?",
+   "re": "What command removes a file?",
+   "v": "I want to delete a file",
+   "answer": "Use:\nrm file.txt\nIt does not go to a trash bin - be careful."
+  }
+ },
+ {
+  "q": "كيف أحذف مجلداً بكل محتوياته؟",
+  "re": "حذف مجلد كامل دفعة واحدة؟",
+  "v": "أمسح مجلداً بكل ملفاته دون سؤال",
+  "answer": "استخدم:\nrm -rf اسم_المجلد\n(-r تكرار للمجلدات، -f بلا تأكيد) — حذارِ: الحذف هنا لا يعود بعده شيء.",
+  "tokens": [
+   "rm",
+   "-rf"
+  ],
+  "obj": "حذف مجلد بكل محتوياته",
+  "en": {
+   "q": "How do I delete a folder with all its contents?",
+   "re": "How do I remove a directory recursively?",
+   "v": "I want to wipe a whole folder",
+   "answer": "Use:\nrm -rf folder_name\n(-r recursive for folders, -f no confirmation) - Caution: irreversible."
+  }
+ },
+ {
+  "q": "كيف أنسخ ملفاً في لينكس؟",
+  "re": "ما أمر نسخ الملفات؟",
+  "v": "أريد تكرار ملف بمسار آخر",
+  "answer": "cp المصدر الهدف\nولنسخ مجلد كامل:\ncp -r مصدر هدف",
+  "tokens": [
+   "cp"
+  ],
+  "obj": "نسخ ملف",
+  "en": {
+   "q": "How do I copy a file?",
+   "re": "What is the command to copy files?",
+   "v": "I want a copy of my file",
+   "answer": "Use:\ncp file.txt destination/\nCopy a folder recursively: cp -r folder dest/"
+  }
+ },
+ {
+  "q": "كيف أنقل ملفاً أو أعيد تسميته؟",
+  "re": "تغيير اسم ملف في الطرفية؟",
+  "v": "أنقل ملفاً إلى مجلد آخر",
+  "answer": "mv المصدر الهدف — نفس الأمر يصلح للنقل ولإعادة التسمية معاً.",
+  "tokens": [
+   "mv"
+  ],
+  "obj": "نقل ملف أو إعادة تسميته",
+  "en": {
+   "q": "How do I move or rename a file?",
+   "re": "What does the mv command do?",
+   "v": "I want to rename my file",
+   "answer": "Use:\nmv file.txt new_name.txt\nMoving: mv file.txt folder/"
+  }
+ },
+ {
+  "q": "كيف أعرض محتويات مجلد؟",
+  "re": "أمر سرد الملفات في لينكس؟",
+  "v": "أريد رؤية ما بداخل المجلد",
+  "answer": "ls\nولعرض التفاصيل والملفات المخفية:\nls -la",
+  "tokens": [
+   "ls"
+  ],
+  "obj": "عرض محتويات مجلد",
+  "en": {
+   "q": "How do I list a folder's contents?",
+   "re": "What does ls do?",
+   "v": "I want to see what is in a folder",
+   "answer": "Use:\nls\nWith details: ls -la"
+  }
+ },
+ {
+  "q": "كيف أعرف المجلد الحالي؟",
+  "re": "أين أنا الآن في الطرفية؟",
+  "v": "كيف أطبع المسار الحالي؟",
+  "answer": "pwd يطبع مسار المجلد الحالي كاملاً.",
+  "tokens": [
+   "pwd"
+  ],
+  "obj": "معرفة المجلد الحالي",
+  "en": {
+   "q": "How do I know my current folder?",
+   "re": "What command prints the working directory?",
+   "v": "I want to see where I am",
+   "answer": "Use:\npwd\nPrints the full current path."
+  }
+ },
+ {
+  "q": "كيف أنتقل بين المجلدات؟",
+  "re": "أمر التنقل في الطرفية؟",
+  "v": "كيف أعود للمجلد الأعلى؟",
+  "answer": "cd اسم_المجلد — وcd .. للخروج مستوى للأعلى، وcd وحده للعودة إلى مجلد المنزل.",
+  "tokens": [
+   "cd"
+  ],
+  "obj": "التنقل بين المجلدات",
+  "en": {
+   "q": "How do I move between folders?",
+   "re": "How does the cd command work?",
+   "v": "I want to go to another folder",
+   "answer": "Use:\ncd folder_name\ncd ..  # up one level\ncd ~  # home"
+  }
+ },
+ {
+  "q": "كيف أعرض محتوى ملف نصي؟",
+  "re": "قراءة ملف داخل الطرفية؟",
+  "v": "أريد رؤية أسطر ملف من الطرفية",
+  "answer": "cat ملف.txt\nولعرض أول 10 أسطر: head ملف.txt\nولعرض آخر 10 أسطر: tail ملف.txt",
+  "tokens": [
+   "cat"
+  ],
+  "obj": "عرض محتوى ملف نصي",
+  "en": {
+   "q": "How do I view a text file's contents?",
+   "re": "What does cat do?",
+   "v": "I want to print a file to the screen",
+   "answer": "Use:\ncat file.txt\nFirst lines: head file.txt - Last: tail file.txt"
+  }
+ },
+ {
+  "q": "كيف أبحث عن كلمة داخل الملفات؟",
+  "re": "أمر البحث في النصوص؟",
+  "v": "أريد إيجاد كلمة داخل مجلد كامل",
+  "answer": "grep كلمة ملف.txt\nوللبحث داخل مجلد كامل بالتكرار:\ngrep -r كلمة مجلد/",
+  "tokens": [
+   "grep"
+  ],
+  "obj": "البحث عن كلمة داخل الملفات",
+  "en": {
+   "q": "How do I search for a word inside files?",
+   "re": "How do I grep for text?",
+   "v": "I want to find where a word appears",
+   "answer": "Use:\ngrep \"word\" file.txt\nRecursive with filenames: grep -rn \"word\" folder/"
+  }
+ },
+ {
+  "q": "كيف أبحث عن ملف بالاسم؟",
+  "re": "أمر إيجاد الملفات؟",
+  "v": "أريد تتبع ملف ضائع بالامتداد",
+  "answer": "find . -name \"*.py\" — يبحث من المجلد الحالي بالنمط المحدد.",
+  "tokens": [
+   "find"
+  ],
+  "obj": "البحث عن ملف بالاسم",
+  "en": {
+   "q": "How do I search for a file by name?",
+   "re": "How does find search files?",
+   "v": "I want to locate a file",
+   "answer": "Use:\nfind . -name \"*.txt\"\nfind /home -name \"report.txt\""
+  }
+ },
+ {
+  "q": "كيف أمنح صلاحية تنفيذ لملف؟",
+  "re": "تغيير صلاحيات ملف؟",
+  "v": "أريد تشغيل سكربت فيرفض التنفيذ",
+  "answer": "chmod +x script.sh\nأو بالأرقام:\nchmod 755 script.sh (المالك: قراءة/كتابة/تنفيذ).",
+  "tokens": [
+   "chmod"
+  ],
+  "obj": "منح صلاحية تنفيذ لملف",
+  "en": {
+   "q": "How do I give a file execute permission?",
+   "re": "How does chmod +x work?",
+   "v": "I want to make my script runnable",
+   "answer": "Use:\nchmod +x script.sh\nThen: ./script.sh"
+  }
+ },
+ {
+  "q": "كيف أضغط مجلداً في ملف tar؟",
+  "re": "إنشاء أرشيف tar.gz؟",
+  "v": "أريد تجميع مجلد في أرشيف واحد",
+  "answer": "tar -czf الأرشيف.tar.gz المجلد\nوللفك:\ntar -xzf الأرشيف.tar.gz",
+  "tokens": [
+   "tar"
+  ],
+  "obj": "ضغط مجلد في أرشيف tar",
+  "en": {
+   "q": "How do I compress a folder into a tar archive?",
+   "re": "What is the tar compress command?",
+   "v": "I want a tar.gz of my folder",
+   "answer": "Use:\ntar -czf archive.tar.gz folder/\nExtract: tar -xzf archive.tar.gz"
+  }
+ },
+ {
+  "q": "كيف أعرف اسم المستخدم الحالي؟",
+  "re": "من المسجل في الطرفية؟",
+  "v": "أعرض هوية المستخدم الفعالة",
+  "answer": "whoami يطبع اسم المستخدم الحالي.",
+  "tokens": [
+   "whoami"
+  ],
+  "obj": "معرفة اسم المستخدم الحالي",
+  "en": {
+   "q": "How do I know the current username?",
+   "re": "What does whoami do?",
+   "v": "I want to see which user I am",
+   "answer": "Use:\nwhoami\nPrints the current user's name."
+  }
+ },
+ {
+  "q": "كيف أعرض العمليات الجارية؟",
+  "re": "أمر مراقبة العمليات؟",
+  "v": "أريد رؤية ما يشتغل الآن في النظام",
+  "answer": "ps aux يعرض كل العمليات، وtop يعرضها مباشرة ومتجددة باستمرار.",
+  "tokens": [
+   "ps"
+  ],
+  "obj": "عرض العمليات الجارية",
+  "en": {
+   "q": "How do I show running processes?",
+   "re": "How do I list running programs?",
+   "v": "I want to see active processes",
+   "answer": "Use:\nps aux\nInteractive: top"
+  }
+ },
+ {
+  "q": "كيف أنهي عملية معلقة؟",
+  "re": "إنهاء عملية بالطرفية؟",
+  "v": "أريد إيقاف برنامج لا يستجيب",
+  "answer": "أوجد رقم العملية بـps ثم:\nkill رقم_العملية\nوإجبارياً:\nkill -9 رقم_العملية",
+  "tokens": [
+   "kill"
+  ],
+  "obj": "إنهاء عملية معلقة",
+  "en": {
+   "q": "How do I kill a stuck process?",
+   "re": "How does the kill command work?",
+   "v": "I want to end a hanging program",
+   "answer": "Find the PID: ps aux | grep name\nThen:\nkill PID\nkill -9 PID  # force"
+  }
+ },
+ {
+  "q": "كيف أضبط متغير بيئة؟",
+  "re": "كيف أستخدم export؟",
+  "v": "أريد تعريف متغير يقرؤه كل البرامج",
+  "answer": "export NAME=value\nوليصبح دائماً أضفه إلى ~/.bashrc",
+  "tokens": [
+   "export"
+  ],
+  "obj": "ضبط متغير بيئة",
+  "en": {
+   "q": "How do I set an environment variable?",
+   "re": "How do I export a variable?",
+   "v": "I want to define an env var",
+   "answer": "Use:\nexport MY_VAR=\"value\"\nPersist it in ~/.bashrc."
+  }
+ },
+ {
+  "q": "كيف أطبع نصاً في الطرفية؟",
+  "re": "أمر echo؟",
+  "v": "أريد إظهار جملة على الشاشة",
+  "answer": "echo \"مرحبا بالعالم\"",
+  "tokens": [
+   "echo"
+  ],
+  "obj": "طباعة نص في الطرفية",
+  "en": {
+   "q": "How do I print text to the terminal?",
+   "re": "What does echo do?",
+   "v": "I want to print a message",
+   "answer": "Use:\necho \"Hello\"\nTo a file: echo \"text\" > file.txt"
+  }
+ },
+ {
+  "q": "كيف أحفظ ناتج أمر في ملف؟",
+  "re": "إخراج أمر إلى ملف؟",
+  "v": "أريد كتابة نتيجة أمر داخل ملف",
+  "answer": "الأمر > ملف.txt للكتابة فوقه\nوالأمر >> ملف.txt للإلحاق في نهايته.",
+  "tokens": [
+   ">"
+  ],
+  "obj": "حفظ ناتج أمر في ملف",
+  "en": {
+   "q": "How do I save a command's output into a file?",
+   "re": "How does output redirection work?",
+   "v": "I want the result stored in a file",
+   "answer": "Use:\ncommand > file.txt  # overwrite\ncommand >> file.txt  # append"
+  }
+ },
+ {
+  "q": "كيف أتصل بخادم عبر ssh؟",
+  "re": "الدخول إلى خادم بعيد؟",
+  "v": "أريد فتح جلسة على سيرفر",
+  "answer": "ssh user@host — ثم أدخل كلمة المرور أو استخدم مفتاحاً معتماً.",
+  "tokens": [
+   "ssh"
+  ],
+  "obj": "الاتصال بخادم عبر ssh",
+  "en": {
+   "q": "How do I connect to a server with ssh?",
+   "re": "What is the ssh command?",
+   "v": "I want to log into my server",
+   "answer": "Use:\nssh user@server_ip\nWith a key: ssh -i key.pem user@server"
+  }
+ },
+ {
+  "q": "كيف أحمّل ملفاً من الإنترنت من الطرفية؟",
+  "re": "تنزيل ملف برابط مباشر؟",
+  "v": "أريد جلب ملف دون متصفح",
+  "answer": "curl -O الرابط\nأو:\nwget الرابط",
+  "tokens": [
+   "curl"
+  ],
+  "obj": "تحميل ملف من الإنترنت",
+  "en": {
+   "q": "How do I download a file from the internet?",
+   "re": "How do I fetch a URL with curl?",
+   "v": "I want to download a link",
+   "answer": "Use:\ncurl -O https://example.com/file.zip\nwget https://example.com/file.zip"
+  }
+ },
+ {
+  "q": "كيف أحرر ملفاً نصياً من الطرفية؟",
+  "re": "محرر نصوص داخل الطرفية؟",
+  "v": "أريد تعديل ملف دون واجهة رسومية",
+  "answer": "nano ملف.txt — للحفظ Ctrl+O ثم للخروج Ctrl+X\nأو الأقوى: vim ملف.txt",
+  "tokens": [
+   "nano"
+  ],
+  "obj": "تحرير ملف نصي من الطرفية",
+  "en": {
+   "q": "How do I edit a text file from the terminal?",
+   "re": "How do I open a file in nano?",
+   "v": "I want to edit a file without a GUI",
+   "answer": "Use:\nnano file.txt\nSave: Ctrl+O - Exit: Ctrl+X"
+  }
+ },
+ {
+  "q": "كيف أبدأ مستودع git؟",
+  "re": "إنشاء مستودع جديد؟",
+  "v": "أريد تتبع مشروعي بـgit",
+  "answer": "git init — ينشئ مستودعاً في المجلد الحالي.",
+  "tokens": [
+   "git",
+   "init"
+  ],
+  "obj": "بدء مستودع git",
+  "en": {
+   "q": "How do I start a git repository?",
+   "re": "What does git init do?",
+   "v": "I want to begin tracking my project with git",
+   "answer": "Use:\ngit init\nCreates a hidden .git folder in the project."
+  }
+ },
+ {
+  "q": "كيف أنسخ مستودع git جاهزاً؟",
+  "re": "استنساخ مشروع من GitHub؟",
+  "v": "أريد تنزيل مشروع موجود",
+  "answer": "git clone رابط_المستودع",
+  "tokens": [
+   "clone"
+  ],
+  "obj": "استنساخ مستودع git",
+  "en": {
+   "q": "How do I clone a git repository?",
+   "re": "What is the git clone command?",
+   "v": "I want a local copy of a repo",
+   "answer": "Use:\ngit clone https://github.com/user/repo.git"
+  }
+ },
+ {
+  "q": "كيف أعرف حالة تغييرات git؟",
+  "re": "أمر git status؟",
+  "v": "أريد رؤية الملفات المعدلة",
+  "answer": "git status — يظهر المعدل والجاهز للإيداع وغير المتتبع.",
+  "tokens": [
+   "status"
+  ],
+  "obj": "معرفة حالة تغييرات git",
+  "en": {
+   "q": "How do I see my git changes?",
+   "re": "What does git status report?",
+   "v": "I want to know what changed",
+   "answer": "Use:\ngit status\nLists modified, staged, and untracked files."
+  }
+ },
+ {
+  "q": "كيف أجهز ملفاتي للإيداع في git؟",
+  "re": "أمر git add؟",
+  "v": "أريد تحديد ملفات للالتزام",
+  "answer": "git add . لكل الملفات\nأو ملفاً بعينه:\ngit add ملف.js",
+  "tokens": [
+   "add"
+  ],
+  "obj": "تجهيز ملفات للإيداع في git",
+  "en": {
+   "q": "How do I stage files for a commit?",
+   "re": "What does git add do?",
+   "v": "I want to prepare my changes",
+   "answer": "Use:\ngit add file.txt\ngit add .  # everything"
+  }
+ },
+ {
+  "q": "كيف أسجل تغييراتي في git؟",
+  "re": "أمر git commit؟",
+  "v": "أريد توثيق نسخة من عملى",
+  "answer": "git commit -m \"وصف واضح للتغيير\"",
+  "tokens": [
+   "commit"
+  ],
+  "obj": "تسجيل تغييرات في git",
+  "en": {
+   "q": "How do I commit changes in git?",
+   "re": "What is the commit command?",
+   "v": "I want to save my work with a message",
+   "answer": "Use:\ngit commit -m \"clear message\""
+  }
+ },
+ {
+  "q": "كيف أرفع تغييراتي إلى المستودع البعيد؟",
+  "re": "أمر git push؟",
+  "v": "أريد مزامنة عملي مع GitHub",
+  "answer": "git push origin main",
+  "tokens": [
+   "push"
+  ],
+  "obj": "رفع تغييرات إلى المستودع البعيد",
+  "en": {
+   "q": "How do I push changes to the remote?",
+   "re": "What does git push do?",
+   "v": "I want to upload my commits",
+   "answer": "Use:\ngit push origin main\nFirst time: git push -u origin main"
+  }
+ },
+ {
+  "q": "كيف أجلب آخر التغييرات من git؟",
+  "re": "أمر git pull؟",
+  "v": "أريد تحديث نسختي المحلية",
+  "answer": "git pull origin main",
+  "tokens": [
+   "pull"
+  ],
+  "obj": "جلب آخر التغييرات من git",
+  "en": {
+   "q": "How do I pull the latest changes from git?",
+   "re": "What does git pull do?",
+   "v": "I want to update my local copy",
+   "answer": "Use:\ngit pull origin main"
+  }
+ },
+ {
+  "q": "كيف أعرض سجل الإيداعات؟",
+  "re": "أمر git log؟",
+  "v": "أريد مراجعة تاريخ المشروع",
+  "answer": "git log\nولعرض مختصر بسطر لكل إيداع:\ngit log --oneline",
+  "tokens": [
+   "log"
+  ],
+  "obj": "عرض سجل الإيداعات",
+  "en": {
+   "q": "How do I view the commit log?",
+   "re": "What does git log show?",
+   "v": "I want the history of commits",
+   "answer": "Use:\ngit log --oneline\nFull detail: git log -p"
+  }
+ },
+ {
+  "q": "كيف أثبت مكتبة بايثون؟",
+  "re": "تثبيت حزمة بـpip؟",
+  "v": "أريد إضافة مكتبة لمشروعي",
+  "answer": "pip install اسم_المكتبة\nولتثبيت كل المتطلبات:\npip install -r requirements.txt",
+  "tokens": [
+   "pip"
+  ],
+  "obj": "تثبيت مكتبة بايثون",
+  "en": {
+   "q": "How do I install a Python library?",
+   "re": "How does pip install work?",
+   "v": "I want to add a package to my project",
+   "answer": "Use:\npip install requests\nSpecific version: pip install requests==2.31.0"
+  }
+ },
+ {
+  "q": "كيف أشغل ملف بايثون؟",
+  "re": "تنفيذ ملف py؟",
+  "v": "أريد تشغيل سكربت بايثون",
+  "answer": "python3 ملف.py",
+  "tokens": [
+   "python"
+  ],
+  "obj": "تشغيل ملف بايثون",
+  "en": {
+   "q": "How do I run a Python file?",
+   "re": "What is the python command to execute a script?",
+   "v": "I want to execute my script",
+   "answer": "Use:\npython3 script.py"
+  }
+ },
+ {
+  "q": "كيف أطبع نصاً في بايثون؟",
+  "re": "دالة print؟",
+  "v": "أريد إخراج نص ببايثون",
+  "answer": "print(\"مرحبا بالعالم\")",
+  "tokens": [
+   "print"
+  ],
+  "obj": "طباعة نص في بايثون",
+  "en": {
+   "q": "How do I print text in Python?",
+   "re": "How does the print function work?",
+   "v": "I want to show output in Python",
+   "answer": "Use:\nprint(\"Hello\")\nMultiple values: print(\"x =\", x)"
+  }
+ },
+ {
+  "q": "كيف أكتب تعليقاً في بايثون؟",
+  "re": "سطر تعليق في الكود؟",
+  "v": "أريد توثيق سطر داخل الكود",
+  "answer": "ابدأ السطر بعلامة #:\n# هذا تعليق لا ينفذ",
+  "tokens": [
+   "#"
+  ],
+  "obj": "كتابة تعليق في بايثون",
+  "en": {
+   "q": "How do I write a comment in Python?",
+   "re": "What is the comment symbol in Python?",
+   "v": "I want to annotate my code",
+   "answer": "Use:\n# this is a comment\n\"\"\"Multi-line docstring for functions and modules.\"\"\""
+  }
+ },
+ {
+  "q": "كيف أنشئ قائمة في بايثون؟",
+  "re": "تعريف list؟",
+  "v": "أريد مصفوفة عناصر قابلة للتعديل",
+  "answer": "القائمة = [1, 2, 3]\nوالإضافة إلى نهايتها:\nالقائمة.append(4)",
+  "tokens": [
+   "append"
+  ],
+  "obj": "إنشاء قائمة في بايثون",
+  "en": {
+   "q": "How do I create a list in Python?",
+   "re": "What is the way to build a list?",
+   "v": "I want to add an item to a list",
+   "answer": "Create and append:\nitems = [1, 2, 3]\nitems.append(4)"
+  }
+ },
+ {
+  "q": "كيف أعرف طول قائمة في بايثون؟",
+  "re": "عدد عناصر قائمة؟",
+  "v": "أريد عد العناصر",
+  "answer": "len(القائمة) — يرجع عدد العناصر.",
+  "tokens": [
+   "len"
+  ],
+  "obj": "معرفة طول قائمة في بايثون",
+  "en": {
+   "q": "How do I get a list's length in Python?",
+   "re": "How does len work?",
+   "v": "I want the number of items",
+   "answer": "Use:\nn = len(items)\nWorks on strings and dicts too."
+  }
+ },
+ {
+  "q": "كيف أكتب حلقة for في بايثون؟",
+  "re": "كيف أكرر تنفيذاً في بايثون؟",
+  "v": "أريد المرور على أرقام متتالية",
+  "answer": "for i in range(10):\n    print(i)",
+  "tokens": [
+   "for",
+   "range"
+  ],
+  "obj": "كتابة حلقة for",
+  "en": {
+   "q": "How do I write a for loop in Python?",
+   "re": "How does a for loop with range work?",
+   "v": "I want to repeat code a number of times",
+   "answer": "Use:\nfor i in range(5):\n    print(i)\nOver a list: for item in items:"
+  }
+ },
+ {
+  "q": "كيف أكتب حلقة while؟",
+  "re": "التكرار بشرط؟",
+  "v": "أريد تكراراً حتى يتحقق شرط",
+  "answer": "x = 0\nwhile x < 5:\n    x += 1\n# تتوقف عند تحقق الشرط",
+  "tokens": [
+   "while"
+  ],
+  "obj": "كتابة حلقة while",
+  "en": {
+   "q": "How do I write a while loop in Python?",
+   "re": "How does while work in Python?",
+   "v": "I want a loop with a condition",
+   "answer": "Use:\nwhile x < 10:\n    x += 1\nAvoid an infinite loop - change the variable."
+  }
+ },
+ {
+  "q": "كيف أكتب شرطاً في بايثون؟",
+  "re": "استخدام if وelse؟",
+  "v": "أريد اتخاذ قرار داخل الكود",
+  "answer": "if العمر >= 18:\n    print(\"كبير\")\nelif العمر >= 13:\n    print(\"مراهق\")\nelse:\n    print(\"صغير\")",
+  "tokens": [
+   "if",
+   "else"
+  ],
+  "obj": "كتابة شرط في بايثون",
+  "en": {
+   "q": "How do I write an if condition in Python?",
+   "re": "How do if/else work in Python?",
+   "v": "I want my code to make a decision",
+   "answer": "Use:\nif x > 10:\n    print(\"big\")\nelif x == 10:\n    print(\"equal\")\nelse:\n    print(\"small\")"
+  }
+ },
+ {
+  "q": "كيف أعرّف دالة في بايثون؟",
+  "re": "كلمة def؟",
+  "v": "أريد كتلة كود قابلة للاستدعاء",
+  "answer": "def جمع(a, b):\n    return a + b\nوالاستدعاء:\nنتيجة = جمع(3, 4)",
+  "tokens": [
+   "def",
+   "return"
+  ],
+  "obj": "تعريف دالة في بايثون",
+  "en": {
+   "q": "How do I define a function in Python?",
+   "re": "How does def work in Python?",
+   "v": "I want to create my own function",
+   "answer": "Use:\ndef add(a, b):\n    return a + b"
+  }
+ },
+ {
+  "q": "كيف أستورد مكتبة في بايثون؟",
+  "re": "استخدام import؟",
+  "v": "أريد الاستفادة من وحدات جاهزة",
+  "answer": "import math\nmath.sqrt(16)\nأو استيراد جزء منها:\nfrom math import sqrt",
+  "tokens": [
+   "import"
+  ],
+  "obj": "استيراد مكتبة في بايثون",
+  "en": {
+   "q": "How do I import a library in Python?",
+   "re": "How does import work in Python?",
+   "v": "I want to use a module",
+   "answer": "Use:\nimport math\nmath.sqrt(16)\nSelective: from math import sqrt"
+  }
+ },
+ {
+  "q": "كيف أقرأ ملفاً في بايثون؟",
+  "re": "فتح ملف للقراءة؟",
+  "v": "أريد تحميل محتوى ملف نصي",
+  "answer": "with open(\"ملف.txt\", \"r\", encoding=\"utf-8\") as f:\n    نص = f.read()",
+  "tokens": [
+   "open"
+  ],
+  "obj": "قراءة ملف في بايثون",
+  "en": {
+   "q": "How do I read a file in Python?",
+   "re": "How does open work for reading?",
+   "v": "I want to load a file's content",
+   "answer": "Use:\nwith open(\"file.txt\") as f:\n    text = f.read()"
+  }
+ },
+ {
+  "q": "كيف أكتب في ملف ببايثون؟",
+  "re": "حفظ نص في ملف؟",
+  "v": "أريد تفريغ نتيجة داخل ملف",
+  "answer": "with open(\"ملف.txt\", \"w\", encoding=\"utf-8\") as f:\n    f.write(\"النص المطلوب\")",
+  "tokens": [
+   "open",
+   "write"
+  ],
+  "obj": "كتابة في ملف ببايثون",
+  "en": {
+   "q": "How do I write to a file in Python?",
+   "re": "How do I save text into a file with Python?",
+   "v": "I want to write data to a file",
+   "answer": "Use:\nwith open(\"file.txt\", \"w\") as f:\n    f.write(\"Hello\")"
+  }
+ },
+ {
+  "q": "كيف أقرأ ملف json في بايثون؟",
+  "re": "تحميل بيانات json؟",
+  "v": "أريد تحليل ملف إعدادات",
+  "answer": "import json\nwith open(\"data.json\") as f:\n    d = json.load(f)",
+  "tokens": [
+   "json"
+  ],
+  "obj": "قراءة ملف json في بايثون",
+  "en": {
+   "q": "How do I read a JSON file in Python?",
+   "re": "How does the json module parse files?",
+   "v": "I want to parse a JSON file",
+   "answer": "Use:\nimport json\nwith open(\"data.json\") as f:\n    data = json.load(f)"
+  }
+ },
+ {
+  "q": "كيف أنشئ قاموساً في بايثون؟",
+  "re": "تعريف dict؟",
+  "v": "أريد تخزين أزواج مفتاح وقيمة",
+  "answer": "شخص = {\"الاسم\": \"ليث\", \"العمر\": 30}\nالوصول:\nشخص[\"الاسم\"]",
+  "tokens": [
+   "dict",
+   "{"
+  ],
+  "obj": "إنشاء قاموس في بايثون",
+  "en": {
+   "q": "How do I create a dictionary in Python?",
+   "re": "What is the dict syntax?",
+   "v": "I want to store key-value pairs",
+   "answer": "Use:\nd = {\"name\": \"Sara\", \"age\": 25}\nd[\"city\"] = \"Sanaa\""
+  }
+ },
+ {
+  "q": "كيف أتعامل مع الأخطاء في بايثون؟",
+  "re": "استخدام try وexcept؟",
+  "v": "أريد كوداً لا ينهار عند الاستثناء",
+  "answer": "try:\n    نتيجة = 10 / 0\nexcept ZeroDivisionError:\n    print(\"قسمة على صفر\")",
+  "tokens": [
+   "try",
+   "except"
+  ],
+  "obj": "التعامل مع الأخطاء في بايثون",
+  "en": {
+   "q": "How do I handle errors in Python?",
+   "re": "How does try/except work?",
+   "v": "I want to catch errors safely",
+   "answer": "Use:\ntry:\n    n = int(text)\nexcept ValueError:\n    print(\"invalid\")"
+  }
+ },
+ {
+  "q": "كيف أنشئ فئة class في بايثون؟",
+  "re": "تعريف كائنات بclass؟",
+  "v": "أريد نموذجاً للكائنات",
+  "answer": "class سيارة:\n    def __init__(self, موديل):\n        self.موديل = موديل",
+  "tokens": [
+   "class"
+  ],
+  "obj": "إنشاء فئة class",
+  "en": {
+   "q": "How do I create a class in Python?",
+   "re": "What is the class syntax?",
+   "v": "I want to define my own type",
+   "answer": "Use:\nclass User:\n    def __init__(self, name):\n        self.name = name"
+  }
+ },
+ {
+  "q": "كيف أستقبل إدخال المستخدم؟",
+  "re": "دالة input؟",
+  "v": "أريد قراءة ما يكتبه المستخدم",
+  "answer": "الاسم = input(\"ما اسمك؟ \")",
+  "tokens": [
+   "input"
+  ],
+  "obj": "استقبال إدخال المستخدم",
+  "en": {
+   "q": "How do I get user input in Python?",
+   "re": "How does input work in Python?",
+   "v": "I want the user to type something",
+   "answer": "Use:\nname = input(\"Your name: \")\nIt returns a string - convert with int() for numbers."
+  }
+ },
+ {
+  "q": "كيف أولد رقماً عشوائياً؟",
+  "re": "مكتبة random؟",
+  "v": "أريد قيمة عشوائية بين رقمين",
+  "answer": "import random\nrandom.randint(1, 100)",
+  "tokens": [
+   "random"
+  ],
+  "obj": "توليد رقم عشوائي",
+  "en": {
+   "q": "How do I generate a random number in Python?",
+   "re": "How does random.randint work?",
+   "v": "I want a random value in a range",
+   "answer": "Use:\nimport random\nn = random.randint(1, 100)"
+  }
+ },
+ {
+  "q": "كيف أرتب قائمة في بايثون؟",
+  "re": "ترتيب عناصر تصاعدياً؟",
+  "v": "أريد قائمة مرتبة من الأصغر للأكبر",
+  "answer": "sorted([3, 1, 2]) ترجع قائمة مرتبة جديدة\nوالقائمة.sort() ترتب القائمة نفسها.",
+  "tokens": [
+   "sorted",
+   "sort"
+  ],
+  "obj": "ترتيب قائمة في بايثون",
+  "en": {
+   "q": "How do I sort a list in Python?",
+   "re": "How do sorted and sort differ?",
+   "v": "I want my list ordered",
+   "answer": "Use:\nsorted_items = sorted(items)\nitems.sort(reverse=True)  # descending"
+  }
+ }
+]

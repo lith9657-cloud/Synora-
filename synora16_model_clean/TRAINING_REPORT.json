@@ -1,0 +1,111 @@
+{
+ "before": {
+  "n_sents": 49127,
+  "n_tokens": 368326,
+  "vocab": 36007,
+  "bigrams": 133188,
+  "trigrams": 189748
+ },
+ "heldout_ppl_before": 273028.9,
+ "heldout_lines": 7972,
+ "files": {
+  "denovoswe_trj_filtered.txt": {
+   "lines": 71407,
+   "mb": 6.01,
+   "seconds": 7.0,
+   "lines_per_sec": 10158
+  },
+  "denovoswe_trj_raw.txt": {
+   "lines": 50900,
+   "mb": 4.01,
+   "seconds": 7.0,
+   "lines_per_sec": 7244
+  },
+  "denovoswe_repos.txt": {
+   "lines": 32118,
+   "mb": 3.99,
+   "seconds": 8.4,
+   "lines_per_sec": 3841
+  },
+  "nemotron_swe_v1.txt": {
+   "lines": 51969,
+   "mb": 4.01,
+   "seconds": 9.4,
+   "lines_per_sec": 5548
+  },
+  "nemotron_sft_swe_v3.txt": {
+   "lines": 83138,
+   "mb": 6.02,
+   "seconds": 20.8,
+   "lines_per_sec": 4006
+  },
+  "terminal_traj.txt": {
+   "lines": 38449,
+   "mb": 4.0,
+   "seconds": 11.8,
+   "lines_per_sec": 3254
+  },
+  "opencode_instruct.txt": {
+   "lines": 115813,
+   "mb": 8.03,
+   "seconds": 26.1,
+   "lines_per_sec": 4437
+  },
+  "glaive_code.txt": {
+   "lines": 57776,
+   "mb": 6.0,
+   "seconds": 16.4,
+   "lines_per_sec": 3513
+  },
+  "codeparrot_clean.txt": {
+   "lines": 186567,
+   "mb": 8.11,
+   "seconds": 51.0,
+   "lines_per_sec": 3655
+  },
+  "gh_skills.txt": {
+   "lines": 3452,
+   "mb": 0.34,
+   "seconds": 16.9,
+   "lines_per_sec": 205
+  },
+  "oasst2.txt": {
+   "lines": 44879,
+   "mb": 5.98,
+   "seconds": 23.2,
+   "lines_per_sec": 1937
+  },
+  "marketing_13k.txt": {
+   "lines": 31262,
+   "mb": 3.99,
+   "seconds": 24.6,
+   "lines_per_sec": 1271
+  },
+  "fineweb_sample.txt": {
+   "lines": 25364,
+   "mb": 4.98,
+   "seconds": 27.2,
+   "lines_per_sec": 933
+  },
+  "fineinstructions.txt": {
+   "lines": 9841,
+   "mb": 1.99,
+   "seconds": 26.1,
+   "lines_per_sec": 377
+  }
+ },
+ "after": {
+  "n_sents": 1051680,
+  "n_tokens": 13815539,
+  "vocab": 306642,
+  "bigrams": 2431469,
+  "trigrams": 5166044
+ },
+ "heldout_ppl_after": 66.3,
+ "heldout_ppl_after_shuffled": 6020.8,
+ "improvement_x": 4120.07,
+ "total_lines_fed": 802935,
+ "total_seconds": 362.2,
+ "corpus_unique_lines": 810952,
+ "note": "global exact-line dedup via sha1 set; heldout 1% never fed"
+}

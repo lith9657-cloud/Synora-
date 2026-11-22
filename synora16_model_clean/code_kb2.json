@@ -1,0 +1,1247 @@
+[
+ {
+  "obj": "قراءة ملف نصي في بايثون",
+  "q": "كيف أقرأ ملفاً نصياً في بايثون؟",
+  "re": "ما طريقة قراءة محتوى ملف نصي؟",
+  "v": "أريد أفتح وأقرأ ملف تكست",
+  "answer": "استخدم open مع with ليُغلق الملف تلقائياً:\nwith open(\"file.txt\", encoding=\"utf-8\") as f:\n    text = f.read()\nولقراءة سطراً سطراً: f.readlines() أو التكرار على f.",
+  "tokens": [
+   "open",
+   "read"
+  ],
+  "en": {
+   "q": "How do I read a text file in Python?",
+   "re": "What is the way to read a file's contents?",
+   "v": "I want to open and read a text file",
+   "answer": "Use open with with so the file closes automatically:\nwith open(\"file.txt\", encoding=\"utf-8\") as f:\n    text = f.read()\nFor line-by-line reading: f.readlines() or loop over f."
+  }
+ },
+ {
+  "obj": "كتابة ملف نصي في بايثون",
+  "q": "كيف أكتب نصاً في ملف ببايثون؟",
+  "re": "ما طريقة حفظ نص داخل ملف جديد؟",
+  "v": "أريد أسجل نص في ملف",
+  "answer": "استخدم وضع الكتابة \"w\" (و\"a\" للإضافة في النهاية):\nwith open(\"file.txt\", \"w\", encoding=\"utf-8\") as f:\n    f.write(\"النص المطلوب\")",
+  "tokens": [
+   "open",
+   "write"
+  ],
+  "en": {
+   "q": "How do I write text to a file in Python?",
+   "re": "How can I save text into a new file?",
+   "v": "I want to write a string to a file",
+   "answer": "Use write mode \"w\" (or \"a\" to append):\nwith open(\"file.txt\", \"w\", encoding=\"utf-8\") as f:\n    f.write(\"Hello there\")"
+  }
+ },
+ {
+  "obj": "إلحاق نص بملف في بايثون",
+  "q": "كيف أضيف نصاً إلى نهاية ملف موجود؟",
+  "re": "ما طريقة الإلحاق في ملف بدل الكتابة فوقه؟",
+  "v": "أريد أزيد سطر في نهاية الملف",
+  "answer": "استخدم وضع الإلحاق \"a\":\nwith open(\"file.txt\", \"a\", encoding=\"utf-8\") as f:\n    f.write(\"سطر جديد\\n\")",
+  "tokens": [
+   "open",
+   "\"a\""
+  ],
+  "en": {
+   "q": "How do I append text to an existing file?",
+   "re": "How do I add to a file without overwriting it?",
+   "v": "I want to add a line at the end of a file",
+   "answer": "Use append mode \"a\":\nwith open(\"file.txt\", \"a\", encoding=\"utf-8\") as f:\n    f.write(\"a new line\\n\")"
+  }
+ },
+ {
+  "obj": "حذف ملف في بايثون",
+  "q": "كيف أحذف ملفاً ببايثون؟",
+  "re": "ما الدالة التي تحذف ملفاً؟",
+  "v": "أريد أمسح ملف من بايثون",
+  "answer": "استخدم وحدة os:\nimport os\nos.remove(\"file.txt\")\nولحذف مجلد بكل محتوياته: shutil.rmtree(\"folder\")",
+  "tokens": [
+   "os.remove"
+  ],
+  "en": {
+   "q": "How do I delete a file in Python?",
+   "re": "Which function removes a file?",
+   "v": "I want to delete a file from Python",
+   "answer": "Use the os module:\nimport os\nos.remove(\"file.txt\")\nTo delete a folder with contents: shutil.rmtree(\"folder\")"
+  }
+ },
+ {
+  "obj": "فحص وجود ملف في بايثون",
+  "q": "كيف أتحقق من وجود ملف قبل فتحه؟",
+  "re": "ما طريقة اختبار وجود الملف؟",
+  "v": "أريد أعرف هل الملف موجود",
+  "answer": "استخدم وحدة os.path:\nimport os\nif os.path.exists(\"file.txt\"):\n    print(\"موجود\")",
+  "tokens": [
+   "os.path.exists"
+  ],
+  "en": {
+   "q": "How do I check if a file exists before opening it?",
+   "re": "How can I test whether a file exists?",
+   "v": "I want to know if a file is there",
+   "answer": "Use os.path:\nimport os\nif os.path.exists(\"file.txt\"):\n    print(\"exists\")"
+  }
+ },
+ {
+  "obj": "عكس قائمة في بايثون",
+  "q": "كيف أعكس ترتيب عناصر قائمة؟",
+  "re": "ما طريقة قلب القائمة؟",
+  "v": "أريد أقلب ترتيب الليست",
+  "answer": "استخدم التقطيع بخطوة سالبة:\nitems = [1, 2, 3]\nreversed_items = items[::-1]\nأو items.reverse() للعكس في المكان.",
+  "tokens": [
+   "[::-1]"
+  ],
+  "en": {
+   "q": "How do I reverse a list in Python?",
+   "re": "What is the way to flip a list's order?",
+   "v": "I want to reverse my list",
+   "answer": "Use slicing with a negative step:\nitems = [1, 2, 3]\nreversed_items = items[::-1]\nOr items.reverse() to reverse in place."
+  }
+ },
+ {
+  "obj": "فرز قائمة في بايثون",
+  "q": "كيف أرتب قائمة تصاعدياً أو تنازلياً؟",
+  "re": "ما طريقة الترتيب في بايثون؟",
+  "v": "أريد أفترز الليست",
+  "answer": "استخدم sorted لنسخة مرتبة أو sort للترتيب في المكان:\nsorted_items = sorted(items)\nitems.sort(reverse=True)  # تنازلي",
+  "tokens": [
+   "sorted"
+  ],
+  "en": {
+   "q": "How do I sort a list in Python?",
+   "re": "What is the way to order a list?",
+   "v": "I want to sort my list",
+   "answer": "Use sorted for a copy or sort for in-place:\nsorted_items = sorted(items)\nitems.sort(reverse=True)  # descending"
+  }
+ },
+ {
+  "obj": "فرز قائمة قواميس بقيمة مفتاح",
+  "q": "كيف أرتب قائمة قواميس حسب قيمة مفتاح؟",
+  "re": "ما طريقة الترتيب حسب حقل داخل القاموس؟",
+  "v": "أريد أفترز حسب سعر العنصر",
+  "answer": "استخدم معامل key في sorted:\nproducts = [{\"price\": 3}, {\"price\": 1}]\nsorted_products = sorted(products, key=lambda p: p[\"price\"])",
+  "tokens": [
+   "key=lambda"
+  ],
+  "en": {
+   "q": "How do I sort a list of dictionaries by a key?",
+   "re": "How can I order dicts by a field value?",
+   "v": "I want to sort by the price field",
+   "answer": "Use the key parameter of sorted:\nproducts = [{\"price\": 3}, {\"price\": 1}]\nsorted_products = sorted(products, key=lambda p: p[\"price\"])"
+  }
+ },
+ {
+  "obj": "سلاسل إلى قائمة والعكس",
+  "q": "كيف أقسم سلسلة إلى قائمة وأجمع قائمة إلى سلسلة؟",
+  "re": "ما طريقة split و join؟",
+  "v": "أريد أفصل الكلمات وأجمعها",
+  "answer": "القسمة: words = \"أ ب ج\".split()\nالجمع: s = \" \".join(words)\nيمكن تحديد الفاصل في كلتيهما.",
+  "tokens": [
+   "split",
+   "join"
+  ],
+  "en": {
+   "q": "How do I split a string into a list and join a list back?",
+   "re": "How do split and join work?",
+   "v": "I want to split words then join them",
+   "answer": "Splitting: words = \"a b c\".split()\nJoining: s = \" \".join(words)\nBoth accept a custom separator."
+  }
+ },
+ {
+  "obj": "استبدال نص في بايثون",
+  "q": "كيف أستبدل جزءاً من سلسلة؟",
+  "re": "ما طريقة replace للنص؟",
+  "v": "أريد أغير كلمة داخل السلسلة",
+  "answer": "استخدم replace (السلاسل غير قابلة للتغيير فيتولد جديد):\ns2 = s.replace(\"قديم\", \"جديد\")",
+  "tokens": [
+   "replace"
+  ],
+  "en": {
+   "q": "How do I replace part of a string in Python?",
+   "re": "How does replace work for text?",
+   "v": "I want to swap a word inside a string",
+   "answer": "Use replace (strings are immutable, so you get a new one):\ns2 = s.replace(\"old\", \"new\")"
+  }
+ },
+ {
+  "obj": "تحويل سلسلة إلى رقم في بايثون",
+  "q": "كيف أحول سلسلة إلى عدد صحيح؟",
+  "re": "ما طريقة تحويل str إلى int؟",
+  "v": "أريد أحول التكست لرقم",
+  "answer": "استخدم int أو float مع معالجة الخطأ:\ntry:\n    n = int(\"123\")\nexcept ValueError:\n    print(\"ليس رقماً\")",
+  "tokens": [
+   "int"
+  ],
+  "en": {
+   "q": "How do I convert a string to a number in Python?",
+   "re": "How do I turn a str into an int?",
+   "v": "I want to parse text as a number",
+   "answer": "Use int or float with error handling:\ntry:\n    n = int(\"123\")\nexcept ValueError:\n    print(\"not a number\")"
+  }
+ },
+ {
+  "obj": "عدد تكرار عنصر في قائمة",
+  "q": "كيف أعرف عدد مرات ظهور عنصر في قائمة؟",
+  "re": "ما طريقة العدّ في بايثون؟",
+  "v": "أريد أعرف كم مرة تكرر العنصر",
+  "answer": "استخدم count أو Counter للإحصاء الكامل:\nn = items.count(2)\nfrom collections import Counter\nc = Counter(items)",
+  "tokens": [
+   "count",
+   "Counter"
+  ],
+  "en": {
+   "q": "How do I count occurrences of an item in a list?",
+   "re": "What is the way to count items in Python?",
+   "v": "I want to know how often an item appears",
+   "answer": "Use count, or Counter for the full tally:\nn = items.count(2)\nfrom collections import Counter\nc = Counter(items)"
+  }
+ },
+ {
+  "obj": "إزالة المكرر من قائمة",
+  "q": "كيف أحذف العناصر المكررة من قائمة؟",
+  "re": "ما طريقة إزالة التكرار مع الحفاظ على الترتيب؟",
+  "v": "أريد أشيل المكرر من الليست",
+  "answer": "الحفاظ على الترتيب (بايثون 3.7+):\nunique = list(dict.fromkeys(items))\nأو set(items) إن لم يهم الترتيب.",
+  "tokens": [
+   "dict.fromkeys"
+  ],
+  "en": {
+   "q": "How do I remove duplicates from a list?",
+   "re": "How can I deduplicate while keeping order?",
+   "v": "I want unique items from my list",
+   "answer": "Order-preserving (Python 3.7+):\nunique = list(dict.fromkeys(items))\nOr set(items) if order does not matter."
+  }
+ },
+ {
+  "obj": "دمج قواميس في بايثون",
+  "q": "كيف أدمج قاموسين في واحد؟",
+  "re": "ما طريقة دمج dicts؟",
+  "v": "أريد أجمع قاموسين",
+  "answer": "استخدم المعامل | (بايثون 3.9+) أو التحديث:\nmerged = d1 | d2\nd1.update(d2)  # يعدل d1 في المكان",
+  "tokens": [
+   "update",
+   "|"
+  ],
+  "en": {
+   "q": "How do I merge two dictionaries in Python?",
+   "re": "What is the way to combine two dicts?",
+   "v": "I want to join two dictionaries",
+   "answer": "Use the | operator (Python 3.9+) or update:\nmerged = d1 | d2\nd1.update(d2)  # modifies d1 in place"
+  }
+ },
+ {
+  "obj": "قيمة بمفتاح افتراضي في قاموس",
+  "q": "كيف أقرأ مفتاحاً قد لا يوجد دون خطأ؟",
+  "re": "ما طريقة get الافتراضية؟",
+  "v": "أريد أقرأ قيمة من القاموس بأمان",
+  "answer": "استخدم get مع قيمة افتراضية:\nvalue = d.get(\"key\", \"افتراضي\")\nوللعدّ: from collections import defaultdict",
+  "tokens": [
+   ".get"
+  ],
+  "en": {
+   "q": "How do I read a dict key that may not exist without an error?",
+   "re": "How does the default get work?",
+   "v": "I want to read a dict value safely",
+   "answer": "Use get with a default:\nvalue = d.get(\"key\", \"default\")\nFor counting: from collections import defaultdict"
+  }
+ },
+ {
+  "obj": "فهرس العنصر أثناء التكرار",
+  "q": "كيف أحصل على رقم العنصر أثناء التكرار على قائمة؟",
+  "re": "ما طريقة enumerate؟",
+  "v": "أريد الرقم مع العنصر في اللوب",
+  "answer": "استخدم enumerate:\nfor i, item in enumerate(items, start=1):\n    print(i, item)",
+  "tokens": [
+   "enumerate"
+  ],
+  "en": {
+   "q": "How do I get the index while looping over a list?",
+   "re": "How does enumerate work?",
+   "v": "I want the position and the item together",
+   "answer": "Use enumerate:\nfor i, item in enumerate(items, start=1):\n    print(i, item)"
+  }
+ },
+ {
+  "obj": "التكرار على قائمتين معاً",
+  "q": "كيف أمرّ على قائمتين في حلقة واحدة؟",
+  "re": "ما طريقة zip؟",
+  "v": "أريد آخذ من ليستين بنفس الوقت",
+  "answer": "استخدم zip:\nfor name, score in zip(names, scores):\n    print(name, score)",
+  "tokens": [
+   "zip"
+  ],
+  "en": {
+   "q": "How do I loop over two lists at once?",
+   "re": "How does zip work in Python?",
+   "v": "I want to take from two lists together",
+   "answer": "Use zip:\nfor name, score in zip(names, scores):\n    print(name, score)"
+  }
+ },
+ {
+  "obj": "فهم القائمة في بايثون",
+  "q": "كيف أكتب حلقة مختصرة لإنشاء قائمة؟",
+  "re": "ما طريقة list comprehension؟",
+  "v": "أريد أسوي الليست بسطر واحد",
+  "answer": "استخدم فهم القائمة:\nquares = [x * x for x in range(10) if x % 2 == 0]",
+  "tokens": [
+   "for x in"
+  ],
+  "en": {
+   "q": "How do I write a one-line loop to build a list?",
+   "re": "What is a list comprehension?",
+   "v": "I want to build a list in one line",
+   "answer": "Use a list comprehension:\nquares = [x * x for x in range(10) if x % 2 == 0]"
+  }
+ },
+ {
+  "obj": "التحقق من نوع في بايثون",
+  "q": "كيف أتحقق من نوع متغير؟",
+  "re": "ما طريقة isinstance؟",
+  "v": "أريد أعرف نوع المتغير",
+  "answer": "استخدم isinstance (تتعامل مع الوراثة):\nif isinstance(x, (int, float)):\n    print(\"رقم\")",
+  "tokens": [
+   "isinstance"
+  ],
+  "en": {
+   "q": "How do I check a variable's type in Python?",
+   "re": "How does isinstance work?",
+   "v": "I want to know the type of a variable",
+   "answer": "Use isinstance (it understands inheritance):\nif isinstance(x, (int, float)):\n    print(\"a number\")"
+  }
+ },
+ {
+  "obj": "التنسيق f-string في بايثون",
+  "q": "كيف أدمج متغيرات داخل نص؟",
+  "re": "ما طريقة f-string للتنسيق؟",
+  "v": "أريد أكتب متغير داخل الجملة",
+  "answer": "استخدم f-string (الأحدث والأوضح):\nname = \"علي\"\nprint(f\"مرحباً {name}، عمرك {25}\")",
+  "tokens": [
+   "f\""
+  ],
+  "en": {
+   "q": "How do I put variables inside a string in Python?",
+   "re": "How do f-strings work for formatting?",
+   "v": "I want to embed a variable in my sentence",
+   "answer": "Use an f-string (the modern, clearest way):\nname = \"Sara\"\nprint(f\"Hello {name}, you are {25}\")"
+  }
+ },
+ {
+  "obj": "تعريف فئة في بايثون",
+  "q": "كيف أعرّف class في بايثون؟",
+  "re": "ما طريقة إنشاء فئة مع بادئ؟",
+  "v": "أريد أسوي كلاس",
+  "answer": "استخدم class مع __init__:\nclass User:\n    def __init__(self, name):\n        self.name = name\n    def greet(self):\n        return f\"مرحباً {self.name}\"",
+  "tokens": [
+   "class",
+   "__init__"
+  ],
+  "en": {
+   "q": "How do I define a class in Python?",
+   "re": "What is the way to create a class with an initializer?",
+   "v": "I want to build a class",
+   "answer": "Use class with __init__:\nclass User:\n    def __init__(self, name):\n        self.name = name\n    def greet(self):\n        return f\"Hello {self.name}\""
+  }
+ },
+ {
+  "obj": "الوراثة في بايثون",
+  "q": "كيف أجعل فئة ترث من أخرى؟",
+  "re": "ما طريقة inheritance؟",
+  "v": "أريد كلاس ياخذ من كلاس ثاني",
+  "answer": "ضع الفئة الأم بين القوسين:\nclass Admin(User):\n    def __init__(self, name, level):\n        super().__init__(name)\n        self.level = level",
+  "tokens": [
+   "super()"
+  ],
+  "en": {
+   "q": "How do I make one class inherit from another?",
+   "re": "How does inheritance work in Python?",
+   "v": "I want a class that extends another",
+   "answer": "Put the parent in parentheses:\nclass Admin(User):\n    def __init__(self, name, level):\n        super().__init__(name)\n        self.level = level"
+  }
+ },
+ {
+  "obj": "معالجة الأخطاء try في بايثون",
+  "q": "كيف ألتقط الاستثناءات في بايثون؟",
+  "re": "ما طريقة try و except الصحيحة؟",
+  "v": "أريد أمنع الكراش مع الخطأ",
+  "answer": "التقط استثناءات محددة دائماً:\ntry:\n    n = int(text)\nexcept ValueError:\n    print(\"قيمة غير صالحة\")\nfinally:\n    print(\"يُنفذ دائماً\")",
+  "tokens": [
+   "try",
+   "except"
+  ],
+  "en": {
+   "q": "How do I handle exceptions in Python?",
+   "re": "What is the correct try/except pattern?",
+   "v": "I want to stop my program crashing",
+   "answer": "Always catch specific exceptions:\ntry:\n    n = int(text)\nexcept ValueError:\n    print(\"invalid value\")\nfinally:\n    print(\"always runs\")"
+  }
+ },
+ {
+  "obj": "إطلاق استثناء في بايثون",
+  "q": "كيف أرفع خطأ يدوياً في بايثون؟",
+  "re": "ما طريقة raise؟",
+  "v": "أريد أطلع خطأ لو الشرط خطأ",
+  "answer": "استخدم raise:\nif not valid:\n    raise ValueError(\"قيمة غير مقبولة\")",
+  "tokens": [
+   "raise"
+  ],
+  "en": {
+   "q": "How do I raise an error manually in Python?",
+   "re": "How does raise work?",
+   "v": "I want to signal an error when a check fails",
+   "answer": "Use raise:\nif not valid:\n    raise ValueError(\"unacceptable value\")"
+  }
+ },
+ {
+  "obj": "الدالة الرئيسية في بايثون",
+  "q": "ما فائدة if __name__ == \"__main__\"؟",
+  "re": "لماذا نكتب الحارس الرئيسي؟",
+  "v": "أريد الملف يشتغل مباشرة فقط",
+  "answer": "هو حارس التنفيذ المباشر — الكود تحته يعمل فقط عند تشغيل الملف، لا عند استيراده:\nif __name__ == \"__main__\":\n    main()",
+  "tokens": [
+   "__main__"
+  ],
+  "en": {
+   "q": "What is if __name__ == \"__main__\" for?",
+   "re": "Why do we write the main guard?",
+   "v": "I want code to run only when executed directly",
+   "answer": "It is the direct-execution guard - code under it runs only when the file is run, not imported:\nif __name__ == \"__main__\":\n    main()"
+  }
+ },
+ {
+  "obj": "دوال لامدا في بايثون",
+  "q": "ما هي lambda وكيف أستخدمها؟",
+  "re": "ما طريقة الدالة المختصرة؟",
+  "v": "أريد دالة سطر واحد",
+  "answer": "دالة مجهولة سطر واحد:\ndouble = lambda x: x * 2\nمناسبة كمعامل: sorted(items, key=lambda x: x[1])",
+  "tokens": [
+   "lambda"
+  ],
+  "en": {
+   "q": "What is a lambda and how do I use it?",
+   "re": "What is the shorthand function syntax?",
+   "v": "I want a one-line function",
+   "answer": "An anonymous single-expression function:\ndouble = lambda x: x * 2\nBest as an argument: sorted(items, key=lambda x: x[1])"
+  }
+ },
+ {
+  "obj": "قيم افتراضية في الدوال",
+  "q": "كيف أجعل معامل دالة اختيارياً؟",
+  "re": "ما طريقة القيم الافتراضية؟",
+  "v": "أريد معامل لو ما نمرر له قيمة",
+  "answer": "ضع قيمة افتراضية في التعريف:\ndef greet(name, greeting=\"مرحباً\"):\n    return f\"{greeting} {name}\"",
+  "tokens": [
+   "def greet"
+  ],
+  "en": {
+   "q": "How do I make a function parameter optional?",
+   "re": "How do default argument values work?",
+   "v": "I want a parameter with a fallback value",
+   "answer": "Give the parameter a default in the signature:\ndef greet(name, greeting=\"Hello\"):\n    return f\"{greeting} {name}\""
+  }
+ },
+ {
+  "obj": "استيراد من ملف في بايثون",
+  "q": "كيف أستدعي دوال من ملف آخر؟",
+  "re": "ما طريقة import من ملف محلي؟",
+  "v": "أريد أستخدم دالة من ملف ثاني",
+  "answer": "ضع الملفين في نفس المجلد ثم:\nfrom helpers import my_func\nmy_func()\nللمجلدات: from pkg.module import my_func",
+  "tokens": [
+   "import"
+  ],
+  "en": {
+   "q": "How do I import functions from another file?",
+   "re": "How does importing from a local module work?",
+   "v": "I want to use a function from another file",
+   "answer": "Put both files in the same folder, then:\nfrom helpers import my_func\nmy_func()\nFor packages: from pkg.module import my_func"
+  }
+ },
+ {
+  "obj": "حزمة متطلبات بايثون",
+  "q": "كيف أنشئ ملف requirements وأثبته؟",
+  "re": "ما طريقة توثيق المكتبات؟",
+  "v": "أريد أسجل المكتبات وأركبها بجهاز ثاني",
+  "answer": "ولّد الملف ثم ثبّته:\npip freeze > requirements.txt\npip install -r requirements.txt",
+  "tokens": [
+   "requirements.txt"
+  ],
+  "en": {
+   "q": "How do I create and install a requirements file?",
+   "re": "What is the way to document project dependencies?",
+   "v": "I want to share my library list",
+   "answer": "Generate then install:\npip freeze > requirements.txt\npip install -r requirements.txt"
+  }
+ },
+ {
+  "obj": "بيئة افتراضية في بايثون",
+  "q": "كيف أنشئ بيئة افتراضية venv؟",
+  "re": "ما طريقة عزل مكتبات المشروع؟",
+  "v": "أريد أسوي venv للمشروع",
+  "answer": "أنشئ البيئة وفعّلها:\npython -m venv .venv\nsource .venv/bin/activate  # لينكس\nلإلغاء التفعيل: deactivate",
+  "tokens": [
+   "venv",
+   "activate"
+  ],
+  "en": {
+   "q": "How do I create a virtual environment (venv)?",
+   "re": "What is the way to isolate project dependencies?",
+   "v": "I want a venv for my project",
+   "answer": "Create and activate:\npython -m venv .venv\nsource .venv/bin/activate  # Linux\nTo leave: deactivate"
+  }
+ },
+ {
+  "obj": "قراءة JSON في بايثون",
+  "q": "كيف أقرأ ملف JSON؟",
+  "re": "ما طريقة تحليل json؟",
+  "v": "أريد أفتح ملف جيسون",
+  "answer": "استخدم وحدة json:\nimport json\nwith open(\"data.json\", encoding=\"utf-8\") as f:\n    data = json.load(f)\nللتحويل من نص: json.loads(text)",
+  "tokens": [
+   "json.load"
+  ],
+  "en": {
+   "q": "How do I read a JSON file in Python?",
+   "re": "What is the way to parse JSON?",
+   "v": "I want to open a JSON file",
+   "answer": "Use the json module:\nimport json\nwith open(\"data.json\", encoding=\"utf-8\") as f:\n    data = json.load(f)\nFrom a string: json.loads(text)"
+  }
+ },
+ {
+  "obj": "كتابة JSON في بايثون",
+  "q": "كيف أحفظ قاموساً كملف JSON؟",
+  "re": "ما طريقة dump للجيسون؟",
+  "v": "أريد أسجل البيانات جيسون",
+  "answer": "استخدم dump مع ضمان العربية:\njson.dump(data, f, ensure_ascii=False, indent=2)",
+  "tokens": [
+   "json.dump",
+   "ensure_ascii"
+  ],
+  "en": {
+   "q": "How do I save a dictionary as a JSON file?",
+   "re": "How does json.dump work?",
+   "v": "I want to store my data as JSON",
+   "answer": "Use dump and keep Arabic readable:\njson.dump(data, f, ensure_ascii=False, indent=2)"
+  }
+ },
+ {
+  "obj": "التاريخ والوقت الحالي في بايثون",
+  "q": "كيف أحصل على التاريخ والوقت الآن؟",
+  "re": "ما طريقة datetime الآن؟",
+  "v": "أريد التاريخ الحالي بالكود",
+  "answer": "استخدم datetime:\nfrom datetime import datetime\nnow = datetime.now()\nprint(now.strftime(\"%Y-%m-%d %H:%M\"))",
+  "tokens": [
+   "datetime",
+   "strftime"
+  ],
+  "en": {
+   "q": "How do I get the current date and time in Python?",
+   "re": "How does datetime now work?",
+   "v": "I want today's date in code",
+   "answer": "Use datetime:\nfrom datetime import datetime\nnow = datetime.now()\nprint(now.strftime(\"%Y-%m-%d %H:%M\"))"
+  }
+ },
+ {
+  "obj": "رقم عشوائي في بايثون",
+  "q": "كيف أولد رقماً عشوائياً؟",
+  "re": "ما طريقة random؟",
+  "v": "أريد رقم رندم",
+  "answer": "استخدم وحدة random:\nimport random\nn = random.randint(1, 100)\npick = random.choice(items)",
+  "tokens": [
+   "random.randint"
+  ],
+  "en": {
+   "q": "How do I generate a random number in Python?",
+   "re": "How does the random module work?",
+   "v": "I want a random value",
+   "answer": "Use the random module:\nimport random\nn = random.randint(1, 100)\npick = random.choice(items)"
+  }
+ },
+ {
+  "obj": "النوم والتأخير في بايثون",
+  "q": "كيف أجعل البرنامج ينتظر ثواني؟",
+  "re": "ما طريقة sleep؟",
+  "v": "أريد الكود يستنى شوي",
+  "answer": "استخدم time.sleep:\nimport time\ntime.sleep(2)  # انتظار ثانيتين",
+  "tokens": [
+   "time.sleep"
+  ],
+  "en": {
+   "q": "How do I make my program wait a few seconds?",
+   "re": "How does sleep work in Python?",
+   "v": "I want the code to pause",
+   "answer": "Use time.sleep:\nimport time\ntime.sleep(2)  # wait two seconds"
+  }
+ },
+ {
+  "obj": "القيم الافتراضية mutable تحذير",
+  "q": "لماذا لا أستخدم قائمة كقيمة افتراضية للدالة؟",
+  "re": "ما مشكلة الـ mutable default؟",
+  "v": "ليش ما أصير حط ليست افتراضية",
+  "answer": "القيمة الافتراضية تُنشأ مرة واحدة فتتراكم بين الاستدعاءات:\ndef add(x, items=None):\n    if items is None:\n        items = []\n    items.append(x)\n    return items",
+  "tokens": [
+   "is None"
+  ],
+  "en": {
+   "q": "Why should a list not be a function's default value?",
+   "re": "What is the mutable default problem?",
+   "v": "Why is a default list dangerous?",
+   "answer": "The default is created ONCE and accumulates across calls:\ndef add(x, items=None):\n    if items is None:\n        items = []\n    items.append(x)\n    return items"
+  }
+ },
+ {
+  "obj": "فحص المفاتيح في حلقة قاموس",
+  "q": "كيف أمرّ على مفاتيح وقيم قاموس معاً؟",
+  "re": "ما طريقة items في القاموس؟",
+  "v": "أريد اللوب يجيب المفتاح والقيمة",
+  "answer": "استخدم items:\nfor key, value in d.items():\n    print(key, \"=>\", value)",
+  "tokens": [
+   ".items()"
+  ],
+  "en": {
+   "q": "How do I loop over a dict's keys and values together?",
+   "re": "How does dict.items work?",
+   "v": "I want key and value in my loop",
+   "answer": "Use items:\nfor key, value in d.items():\n    print(key, \"=>\", value)"
+  }
+ },
+ {
+  "obj": "سلسلة تحتوي سلسلة",
+  "q": "كيف أتحقق أن نصاً يحتوي كلمة معينة؟",
+  "re": "ما طريقة فحص الاحتواء في بايثون؟",
+  "v": "أريد أعرف هل الكلمة داخل النص",
+  "answer": "استخدم المعامل in:\nif \"بايثون\" in text:\n    print(\"موجودة\")",
+  "tokens": [
+   "in text"
+  ],
+  "en": {
+   "q": "How do I check whether a string contains a word in Python?",
+   "re": "What is the containment check for strings?",
+   "v": "I want to know if a word is in my text",
+   "answer": "Use the in operator:\nif \"python\" in text:\n    print(\"found\")"
+  }
+ },
+ {
+  "obj": "قص الفراغات من النص",
+  "q": "كيف أحذف الفراغات من بداية ونهاية نص؟",
+  "re": "ما طريقة strip؟",
+  "v": "أريد أنضف المسافات",
+  "answer": "استخدم strip (وlstrip/rstrip لجهة واحدة):\nclean = text.strip()",
+  "tokens": [
+   "strip"
+  ],
+  "en": {
+   "q": "How do I trim whitespace from the start and end of a string?",
+   "re": "How does strip work in Python?",
+   "v": "I want to clean the spaces around my text",
+   "answer": "Use strip (lstrip/rstrip for one side):\nclean = text.strip()"
+  }
+ },
+ {
+  "obj": "تحويل قائمة إلى سلسلة مفصولة",
+  "q": "كيف أطبع قائمة مفصولة بفواصل؟",
+  "re": "ما طريقة join مع فاصل؟",
+  "v": "أريد أفصل العناصر بفاصلة",
+  "answer": "استخدم join:\n\", \".join(map(str, items))",
+  "tokens": [
+   "join"
+  ],
+  "en": {
+   "q": "How do I print a list as a comma-separated string?",
+   "re": "How does join with a separator work?",
+   "v": "I want my items joined by commas",
+   "answer": "Use join:\n\", \".join(map(str, items))"
+  }
+ },
+ {
+  "obj": "إعطاء صلاحية تنفيذ لملف",
+  "q": "كيف أجعل ملفاً قابلاً للتنفيذ؟",
+  "re": "ما أمنح صلاحيات التشغيل chmod؟",
+  "v": "أريد الملف يشتغل ./script",
+  "answer": "استخدم chmod:\nchmod +x script.sh\nثم شغّله: ./script.sh",
+  "tokens": [
+   "chmod"
+  ],
+  "en": {
+   "q": "How do I make a file executable?",
+   "re": "How do I grant run permissions with chmod?",
+   "v": "I want to run my script with ./script",
+   "answer": "Use chmod:\nchmod +x script.sh\nThen run it: ./script.sh"
+  }
+ },
+ {
+  "obj": "البحث في محتوى الملفات",
+  "q": "كيف أبحث عن كلمة داخل ملفات مجلد؟",
+  "re": "ما أمر grep مع التكرار؟",
+  "v": "أريد أدور على كلمة داخل المشروع",
+  "answer": "استخدم grep مع التكرار وأسماء الملفات:\ngrep -rn \"كلمة\" مجلد/",
+  "tokens": [
+   "grep"
+  ],
+  "en": {
+   "q": "How do I search for a word inside files in a folder?",
+   "re": "How does recursive grep work?",
+   "v": "I want to find a word across my project",
+   "answer": "Use grep recursively with filenames:\ngrep -rn \"word\" folder/"
+  }
+ },
+ {
+  "obj": "البحث عن ملفات بالاسم",
+  "q": "كيف أجد ملفاً بالاسم داخل الشجرة؟",
+  "re": "ما أمر find بالاسم؟",
+  "v": "أريد أدور على ملف اسمه كذا",
+  "answer": "استخدم find:\nfind . -name \"*.py\"\nfind /home -type f -name \"report.txt\"",
+  "tokens": [
+   "find"
+  ],
+  "en": {
+   "q": "How do I find files by name in a directory tree?",
+   "re": "How does find -name work?",
+   "v": "I want to locate a file by its name",
+   "answer": "Use find:\nfind . -name \"*.py\"\nfind /home -type f -name \"report.txt\""
+  }
+ },
+ {
+  "obj": "عرض نهاية ملف متغيّر",
+  "q": "كيف أتابع تحديثات ملف السجل لحظياً؟",
+  "re": "ما أمر tail -f للسجلات؟",
+  "v": "أريد أشوف اللوج وهو يتحدث",
+  "answer": "استخدم tail مع المتابعة:\ntail -f app.log\nللأسطر العشرة الأخيرة: tail -n 10 app.log",
+  "tokens": [
+   "tail"
+  ],
+  "en": {
+   "q": "How do I follow a log file live as it updates?",
+   "re": "How does tail -f work for logs?",
+   "v": "I want to watch a log in real time",
+   "answer": "Use tail with follow:\ntail -f app.log\nLast ten lines: tail -n 10 app.log"
+  }
+ },
+ {
+  "obj": "عدّ أسطر الملف",
+  "q": "كيف أعدّ أسطر ملف؟",
+  "re": "ما أمر wc -l؟",
+  "v": "أريد أعرف كم سطر في الملف",
+  "answer": "استخدم wc:\nwc -l file.txt\nوللكلمات: wc -w file.txt",
+  "tokens": [
+   "wc"
+  ],
+  "en": {
+   "q": "How do I count the lines of a file?",
+   "re": "How does wc -l work?",
+   "v": "I want to know how many lines a file has",
+   "answer": "Use wc:\nwc -l file.txt\nWords: wc -w file.txt"
+  }
+ },
+ {
+  "obj": "عرض العمليات الجارية",
+  "q": "كيف أعرض البرامج التي تعمل الآن؟",
+  "re": "ما أمر ps للعمليات؟",
+  "v": "أريد أشوف البرامج الشغالة",
+  "answer": "استخدم ps:\nps aux | grep python\nوللعرض التفاعلي: top أو htop",
+  "tokens": [
+   "ps aux"
+  ],
+  "en": {
+   "q": "How do I list the programs currently running?",
+   "re": "How does ps list processes?",
+   "v": "I want to see running programs",
+   "answer": "Use ps:\nps aux | grep python\nInteractive: top or htop"
+  }
+ },
+ {
+  "obj": "إيقاف عملية",
+  "q": "كيف أوقف برنامجاً لا يستجيب؟",
+  "re": "ما أمر kill العملية؟",
+  "v": "أريد أقتل البرنامج المعلق",
+  "answer": "اعرف الرقم ثم أوقفه:\nps aux | grep اسم_البرنامج\nkill 12345\nkill -9 12345  # إجباري",
+  "tokens": [
+   "kill"
+  ],
+  "en": {
+   "q": "How do I stop a program that is not responding?",
+   "re": "How does kill terminate a process?",
+   "v": "I want to kill the stuck process",
+   "answer": "Find the PID then stop it:\nps aux | grep program_name\nkill 12345\nkill -9 12345  # force"
+  }
+ },
+ {
+  "obj": "مساحة القرص",
+  "q": "كيف أعرف مساحة القرص المتبقية؟",
+  "re": "ما أمر df و du؟",
+  "v": "أريد أعرف كم باقي من الهارد",
+  "answer": "للأقراص: df -h\nولحجم المجلدات: du -sh * | sort -h",
+  "tokens": [
+   "df",
+   "du"
+  ],
+  "en": {
+   "q": "How do I check free disk space?",
+   "re": "How do df and du work?",
+   "v": "I want to see how much disk is left",
+   "answer": "For disks: df -h\nFor folder sizes: du -sh * | sort -h"
+  }
+ },
+ {
+  "obj": "ضغط ملفات tar",
+  "q": "كيف أضغط مجلداً وأفك الضغط؟",
+  "re": "ما أوامر tar للضغط والفك؟",
+  "v": "أريد أعمل ملف مضغوط وأفكه",
+  "answer": "الضغط:\ntar -czf archive.tar.gz مجلد/\nالفك:\ntar -xzf archive.tar.gz",
+  "tokens": [
+   "tar"
+  ],
+  "en": {
+   "q": "How do I compress a folder and extract it back?",
+   "re": "What are the tar compress and extract commands?",
+   "v": "I want to create and unpack an archive",
+   "answer": "Compress:\ntar -czf archive.tar.gz folder/\nExtract:\ntar -xzf archive.tar.gz"
+  }
+ },
+ {
+  "obj": "تنزيل من الإنترنت بالطرفية",
+  "q": "كيف أنزّل ملفاً من رابط؟",
+  "re": "ما أمر curl للتنزيل؟",
+  "v": "أريد أنزل ملف من لينك",
+  "answer": "استخدم curl:\ncurl -O https://example.com/file.zip\nمع إرسال بيانات: curl -X POST -d \"a=1\" url",
+  "tokens": [
+   "curl"
+  ],
+  "en": {
+   "q": "How do I download a file from a URL in the terminal?",
+   "re": "How does curl download work?",
+   "v": "I want to fetch a file from a link",
+   "answer": "Use curl:\ncurl -O https://example.com/file.zip\nPosting data: curl -X POST -d \"a=1\" url"
+  }
+ },
+ {
+  "obj": "إنشاء اختصار رابط رمزي",
+  "q": "كيف أنشئ رابطاً رمزياً symlink؟",
+  "re": "ما أمر ln -s؟",
+  "v": "أريد أسوي شورتكت لملف",
+  "answer": "استخدم ln:\nln -s /مسار/الأصل اسم_الرابط\nسيعمل الرابط كأنه الملف الأصلي.",
+  "tokens": [
+   "ln -s"
+  ],
+  "en": {
+   "q": "How do I create a symbolic link (symlink)?",
+   "re": "How does ln -s work?",
+   "v": "I want a shortcut to a file",
+   "answer": "Use ln:\nln -s /path/original link_name\nThe link behaves like the original file."
+  }
+ },
+ {
+  "obj": "متغير بيئة في لينكس",
+  "q": "كيف أعرّف متغير بيئة؟",
+  "re": "ما طريقة export؟",
+  "v": "أريد أضيف متغير PATH",
+  "answer": "في الجلسة الحالية:\nexport MY_VAR=\"قيمة\"\nللدوام: أضفه إلى ~/.bashrc ثم source ~/.bashrc",
+  "tokens": [
+   "export"
+  ],
+  "en": {
+   "q": "How do I set an environment variable?",
+   "re": "How does export work?",
+   "v": "I want to add something to PATH",
+   "answer": "For the current session:\nexport MY_VAR=\"value\"\nPersist it in ~/.bashrc then: source ~/.bashrc"
+  }
+ },
+ {
+  "obj": "مكان البرنامج المثبت",
+  "q": "كيف أعرف مسار برنامج مثبت؟",
+  "re": "ما أمر which؟",
+  "v": "أريد أعرف وين البايثون مثبت",
+  "answer": "استخدم which:\nwhich python3\nيعرض المسار الكامل للتنفيذي.",
+  "tokens": [
+   "which"
+  ],
+  "en": {
+   "q": "How do I find where an installed program lives?",
+   "re": "How does the which command work?",
+   "v": "I want the path of my python binary",
+   "answer": "Use which:\nwhich python3\nIt prints the full executable path."
+  }
+ },
+ {
+  "obj": "سجل الأوامر في لينكس",
+  "q": "كيف أستعرض الأوامر السابقة؟",
+  "re": "ما أمر history؟",
+  "v": "أريد أشوف الأوامر اللي كتبتها",
+  "answer": "استخدم history:\nhistory | tail -20\nلإعادة تنفيذ: !رقم_الأمر",
+  "tokens": [
+   "history"
+  ],
+  "en": {
+   "q": "How do I view my previous terminal commands?",
+   "re": "How does the history command work?",
+   "v": "I want to see the commands I typed",
+   "answer": "Use history:\nhistory | tail -20\nRe-run one: !number"
+  }
+ },
+ {
+  "obj": "جدولة مهمة cron",
+  "q": "كيف أجدول مهمة تعمل دورياً؟",
+  "re": "ما طريقة crontab؟",
+  "v": "أريد سكربت يشتغل كل يوم",
+  "answer": "عدّل الجدولة:\ncrontab -e\nمثال يومي 9 صباحاً:\n0 9 * * * /path/script.sh",
+  "tokens": [
+   "crontab"
+  ],
+  "en": {
+   "q": "How do I schedule a task to run periodically?",
+   "re": "How does crontab work?",
+   "v": "I want my script to run every day",
+   "answer": "Edit the schedule:\ncrontab -e\nDaily at 9 AM:\n0 9 * * * /path/script.sh"
+  }
+ },
+ {
+  "obj": "حالة خدمة systemd",
+  "q": "كيف أتحقق من حالة خدمة وأعيد تشغيلها؟",
+  "re": "ما أوامر systemctl؟",
+  "v": "أريد أشوف حالة السيرفر وأعمل restart",
+  "answer": "استخدم systemctl:\nsystemctl status nginx\nsudo systemctl restart nginx",
+  "tokens": [
+   "systemctl"
+  ],
+  "en": {
+   "q": "How do I check a service's status and restart it?",
+   "re": "What are the systemctl commands?",
+   "v": "I want to see my server status and restart it",
+   "answer": "Use systemctl:\nsystemctl status nginx\nsudo systemctl restart nginx"
+  }
+ },
+ {
+  "obj": "تثبيت حزم على أوبونتو",
+  "q": "كيف أثبت حزمة على أوبونتو؟",
+  "re": "ما أمر apt install؟",
+  "v": "أريد أركب برنامج من الطرفية",
+  "answer": "حدّث الفهارس ثم ثبّت:\nsudo apt update\nsudo apt install اسم_الحزمة",
+  "tokens": [
+   "apt install"
+  ],
+  "en": {
+   "q": "How do I install a package on Ubuntu?",
+   "re": "How does apt install work?",
+   "v": "I want to install software from the terminal",
+   "answer": "Update indexes then install:\nsudo apt update\nsudo apt install package_name"
+  }
+ },
+ {
+  "obj": "إعادة توجيه الإخراج لملف",
+  "q": "كيف أحفظ ناتج أمر في ملف؟",
+  "re": "ما طريقة > و >>؟",
+  "v": "أريد ناتج الأمر يدخل ملف",
+  "answer": "استخدم إعادة التوجيه:\ncommand > file.txt  # كتابة فوقية\ncommand >> file.txt  # إلحاق",
+  "tokens": [
+   ">>"
+  ],
+  "en": {
+   "q": "How do I save a command's output to a file?",
+   "re": "How do > and >> redirection work?",
+   "v": "I want the command output inside a file",
+   "answer": "Use redirection:\ncommand > file.txt  # overwrite\ncommand >> file.txt  # append"
+  }
+ },
+ {
+  "obj": "ربط الأوامر بالأنابيب",
+  "q": "كيف أمرر ناتج أمر إلى آخر؟",
+  "re": "ما معنى | في الطرفية؟",
+  "v": "أريد أوصال أمرين",
+  "answer": "استخدم الأنبوب |:\nps aux | grep python | wc -l\nناتج كل أمر يدخل التالي.",
+  "tokens": [
+   "|"
+  ],
+  "en": {
+   "q": "How do I pass one command's output to another?",
+   "re": "What does the pipe | mean in the terminal?",
+   "v": "I want to chain two commands",
+   "answer": "Use the pipe |:\nps aux | grep python | wc -l\nEach command feeds the next."
+  }
+ },
+ {
+  "obj": "مقارنة ملفين",
+  "q": "كيف أقارن ملفين سطراً بسطر؟",
+  "re": "ما أمر diff؟",
+  "v": "أريد أشوف الفرق بين ملفين",
+  "answer": "استخدم diff:\ndiff file1.txt file2.txt\nأوضحاً: diff -u file1 file2",
+  "tokens": [
+   "diff"
+  ],
+  "en": {
+   "q": "How do I compare two files line by line?",
+   "re": "How does the diff command work?",
+   "v": "I want to see the difference between two files",
+   "answer": "Use diff:\ndiff file1.txt file2.txt\nNicer: diff -u file1 file2"
+  }
+ },
+ {
+  "obj": "حالة مستودع git",
+  "q": "كيف أعرف حالة مستودع git؟",
+  "re": "ما أمر git status؟",
+  "v": "أريد أشوف شنو تغير بالمستودع",
+  "answer": "استخدم:\ngit status\nيعرض المعدّل والمُضاف وغير المتتبَّع.",
+  "tokens": [
+   "git status"
+  ],
+  "en": {
+   "q": "How do I see the state of my git repository?",
+   "re": "What does git status show?",
+   "v": "I want to see what changed in my repo",
+   "answer": "Use:\ngit status\nShows modified, staged, and untracked files."
+  }
+ },
+ {
+  "obj": "سجل الالتزامات git",
+  "q": "كيف أعرض تاريخ الالتزامات؟",
+  "re": "ما أمر git log؟",
+  "v": "أريد أشوف الـ commits القديمة",
+  "answer": "استخدم:\ngit log --oneline\nالتفصيل مع التغييرات: git log -p",
+  "tokens": [
+   "git log"
+  ],
+  "en": {
+   "q": "How do I view the commit history?",
+   "re": "What does git log show?",
+   "v": "I want to see my old commits",
+   "answer": "Use:\ngit log --oneline\nWith the changes: git log -p"
+  }
+ },
+ {
+  "obj": "إنشاء فرع git",
+  "q": "كيف أنشئ فرعاً جديداً وأنتقل إليه؟",
+  "re": "ما أمر git branch و switch؟",
+  "v": "أريد أسوي برانش جديد",
+  "answer": "أنشئ وانتقل:\ngit branch feature-x\ngit switch feature-x\nأو مباشرة: git switch -c feature-x",
+  "tokens": [
+   "git branch",
+   "git switch"
+  ],
+  "en": {
+   "q": "How do I create a new branch and switch to it?",
+   "re": "How do git branch and switch work?",
+   "v": "I want a new branch for my feature",
+   "answer": "Create then switch:\ngit branch feature-x\ngit switch feature-x\nOr directly: git switch -c feature-x"
+  }
+ },
+ {
+  "obj": "دمج فرع في git",
+  "q": "كيف أدمج فرعاً في الرئيسي؟",
+  "re": "ما طريقة git merge؟",
+  "v": "أريد أجمع البرانشات",
+  "answer": "انتقل للهدف ثم ادمج:\ngit switch main\ngit merge feature-x\nللدمج بأعلى التاريخ: git rebase main",
+  "tokens": [
+   "git merge"
+  ],
+  "en": {
+   "q": "How do I merge a branch into main?",
+   "re": "How does git merge work?",
+   "v": "I want to combine my branches",
+   "answer": "Switch to the target then merge:\ngit switch main\ngit merge feature-x\nTop-of-history merge: git rebase main"
+  }
+ },
+ {
+  "obj": "حفظ العمل المؤقت git stash",
+  "q": "كيف أخفي تعديلاتي مؤقتاً دون التزام؟",
+  "re": "ما طريقة git stash؟",
+  "v": "أريد أخلي التعديلات جانب وشغل ثاني",
+  "answer": "استخدم stash:\ngit stash\nللإرجاع: git stash pop\nللسرد: git stash list",
+  "tokens": [
+   "git stash"
+  ],
+  "en": {
+   "q": "How do I hide my changes temporarily without committing?",
+   "re": "How does git stash work?",
+   "v": "I want to set my changes aside and work on something else",
+   "answer": "Use stash:\ngit stash\nRestore: git stash pop\nList: git stash list"
+  }
+ },
+ {
+  "obj": "إلغاء آخر التزام git",
+  "q": "كيف ألغي آخر التزام مع الاحتفاظ بالتغييرات؟",
+  "re": "ما طريقة git reset --soft؟",
+  "v": "أيريد أرجع الكوميت الأخير بس أخلي الملفات",
+  "answer": "استخدم reset الناعم:\ngit reset --soft HEAD~1\nالتغييرات تعود إلى منطقة الإعداد.",
+  "tokens": [
+   "reset --soft"
+  ],
+  "en": {
+   "q": "How do I undo the last commit but keep the changes?",
+   "re": "How does git reset --soft work?",
+   "v": "I want my last commit back with files kept",
+   "answer": "Use a soft reset:\ngit reset --soft HEAD~1\nThe changes return to the staging area."
+  }
+ },
+ {
+  "obj": "تعديل آخر التزام git",
+  "q": "كيف أضيف ملفاً إلى آخر التزام؟",
+  "re": "ما طريقة commit --amend؟",
+  "v": "أريد أعدّل آخر كوميت",
+  "answer": "أضف الملف ثم عدّل:\ngit add ملف\ngit commit --amend --no-edit",
+  "tokens": [
+   "--amend"
+  ],
+  "en": {
+   "q": "How do I add a file to the last commit?",
+   "re": "How does commit --amend work?",
+   "v": "I want to fix my last commit",
+   "answer": "Stage the file then amend:\ngit add file\ngit commit --amend --no-edit"
+  }
+ },
+ {
+  "obj": "وسوم الإصدارات git tag",
+  "q": "كيف أوسم إصداراً في git؟",
+  "re": "ما أمر git tag؟",
+  "v": "أريد أعلم النسخة v1",
+  "answer": "أنشئ الوسم وادفعه:\ngit tag v1.0.0\ngit push origin v1.0.0",
+  "tokens": [
+   "git tag"
+  ],
+  "en": {
+   "q": "How do I tag a release in git?",
+   "re": "How does git tag work?",
+   "v": "I want to mark version v1",
+   "answer": "Create the tag and push it:\ngit tag v1.0.0\ngit push origin v1.0.0"
+  }
+ },
+ {
+  "obj": "ملف gitignore",
+  "q": "كيف أمنع git من تتبع ملفات معينة؟",
+  "re": "ما طريقة .gitignore؟",
+  "v": "أريد المستودع ما ياخذ ملفات معينة",
+  "answer": "أنشئ ملف .gitignore وضع الأنماط:\nnode_modules/\n*.log\n.env\nلإلغاء تتبع ملف متتبَّع: git rm --cached ملف",
+  "tokens": [
+   ".gitignore"
+  ],
+  "en": {
+   "q": "How do I stop git from tracking certain files?",
+   "re": "How does .gitignore work?",
+   "v": "I want my repo to skip certain files",
+   "answer": "Create .gitignore with patterns:\nnode_modules/\n*.log\n.env\nUntrack a tracked file: git rm --cached file"
+  }
+ },
+ {
+  "obj": "حذف فرع git",
+  "q": "كيف أحذف فرعاً بعد دمجه؟",
+  "re": "ما أمر branch -d؟",
+  "v": "أريد أشيل البرانش القديم",
+  "answer": "استخدم:\ngit branch -d feature-x\nللحذف من البعيد: git push origin --delete feature-x",
+  "tokens": [
+   "branch -d"
+  ],
+  "en": {
+   "q": "How do I delete a branch after merging it?",
+   "re": "How does git branch -d work?",
+   "v": "I want to remove my old branch",
+   "answer": "Use:\ngit branch -d feature-x\nOn the remote: git push origin --delete feature-x"
+  }
+ },
+ {
+  "obj": "عرض تغييرات ملف git",
+  "q": "كيف أشوف ماذا تغيّر قبل الالتزام؟",
+  "re": "ما أمر git diff؟",
+  "v": "أريد أشوف التعديلات قبل ما أسجل",
+  "answer": "استخدم:\ngit diff          # غير المُضاف\ngit diff --staged  # المُضاف",
+  "tokens": [
+   "git diff"
+  ],
+  "en": {
+   "q": "How do I see what changed before committing?",
+   "re": "What does git diff show?",
+   "v": "I want to review my edits before saving",
+   "answer": "Use:\ngit diff          # unstaged\ngit diff --staged  # staged"
+  }
+ },
+ {
+  "obj": "إضافة remote في git",
+  "q": "كيف أربط مستودعاً محلياً بمستودع بعيد؟",
+  "re": "ما طريقة remote add؟",
+  "v": "أريد أوصل المشروع بجيتهاب",
+  "answer": "استخدم:\ngit remote add origin https://github.com/user/repo.git\ngit push -u origin main",
+  "tokens": [
+   "remote add"
+  ],
+  "en": {
+   "q": "How do I connect a local repository to a remote one?",
+   "re": "How does remote add work?",
+   "v": "I want to link my project to GitHub",
+   "answer": "Use:\ngit remote add origin https://github.com/user/repo.git\ngit push -u origin main"
+  }
+ },
+ {
+  "obj": "تشغيل الاختبارات pytest",
+  "q": "كيف أشغّل اختبارات بايثون بـ pytest؟",
+  "re": "ما أمر pytest؟",
+  "v": "أريد أشغل التستات",
+  "answer": "ثبّت وشغّل:\npip install pytest\npytest -v\nملفات الاختبار تبدأ بـ test_ والدوال بـ test_.",
+  "tokens": [
+   "pytest"
+  ],
+  "en": {
+   "q": "How do I run Python tests with pytest?",
+   "re": "What is the pytest command?",
+   "v": "I want to run my test suite",
+   "answer": "Install and run:\npip install pytest\npytest -v\nTest files start with test_ and functions with test_."
+  }
+ },
+ {
+  "obj": "كتابة اختبار pytest",
+  "q": "كيف أكتب اختباراً بسيطاً بـ pytest؟",
+  "re": "ما شكل دالة الاختبار؟",
+  "v": "أريد أكتب تست للدالة",
+  "answer": "أنشئ test_calc.py:\ndef test_add():\n    assert add(2, 3) == 5\nوقارن باستخدام assert فقط.",
+  "tokens": [
+   "assert"
+  ],
+  "en": {
+   "q": "How do I write a simple pytest test?",
+   "re": "What does a test function look like?",
+   "v": "I want to test my function",
+   "answer": "Create test_calc.py:\ndef test_add():\n    assert add(2, 3) == 5\nJust compare with assert."
+  }
+ },
+ {
+  "obj": "طباعة تصحيحية ببايثون",
+  "q": "ما أفضل طريقة للتصحيح بالطباعة؟",
+  "re": "هل print كافي للدبق؟",
+  "v": "أريد أشوف القيم وأنا أصحح",
+  "answer": "للطيف: print(f\"DEBUG: x={x}\")\nالأفضل للسجلات: logging.debug — يُتحكم بمستواه ويُطفأ بالإنتاج.",
+  "tokens": [
+   "logging"
+  ],
+  "en": {
+   "q": "What is the best way to debug with printing?",
+   "re": "Is print enough for debugging?",
+   "v": "I want to see values while I fix things",
+   "answer": "Quick: print(f\"DEBUG: x={x}\")\nBetter for logs: logging.debug - level-controlled and off in production."
+  }
+ },
+ {
+  "obj": "إيقاف نقطة تفتيش pdb",
+  "q": "كيف أوقف التنفيذ وأفحص المتغيرات؟",
+  "re": "ما طريقة breakpoint؟",
+  "v": "أريد أوقف الكود وأتأمل",
+  "answer": "ضع في المكان المطلوب:\nbreakpoint()\nأو من بايثون 3.7+ يشغّل pdb؛ اخرج بـ q.",
+  "tokens": [
+   "breakpoint"
+  ],
+  "en": {
+   "q": "How do I pause execution and inspect variables?",
+   "re": "How does breakpoint work?",
+   "v": "I want to stop the code and look around",
+   "answer": "Place where you want to pause:\nbreakpoint()\nPython 3.7+ starts pdb; quit with q."
+  }
+ },
+ {
+  "obj": "قراءة تتبع الخطأ في بايثون",
+  "q": "كيف أقرأ Traceback بسرعة؟",
+  "re": "ما معنى الأسطر الأخيرة من الخطأ؟",
+  "v": "أضيع وقت مع الإrror الطويل",
+  "answer": "في بايثون يظهر الخطأ كـ Traceback — اقرأ من الأسفل: نوع الاستثناء والرسالة ثم آخر ملف من كودك.\nValueError: قيمة غير صالحة → اقرأ السطر المذكور فوقه.",
+  "tokens": [
+   "Traceback"
+  ],
+  "en": {
+   "q": "How do I read a Traceback quickly?",
+   "re": "What do the last lines of an error mean?",
+   "v": "I get lost in long errors",
+   "answer": "In Python the error shows as a Traceback - read from the BOTTOM: the exception type and message, then the last file of your own code.\nValueError: invalid value → read the line above it."
+  }
+ }
+]
