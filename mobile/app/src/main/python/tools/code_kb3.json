@@ -1,0 +1,258 @@
+[
+ {
+  "q": "تشغيل أمر خارجي في بايثون",
+  "re": "كيف أشغّل أمر طرفية من داخل بايثون؟",
+  "v": "ما طريقة تنفيذ أمر خارجي من الكود؟",
+  "v3": "أريد تشغيل أمر من بايثون وأخذ ناتجه",
+  "tokens": [
+   "subprocess"
+  ],
+  "answer": "استخدم subprocess — لا استخدامًا لأوامر نصية عبر shell عند مدخلات من المستخدم:\nimport subprocess\nr = subprocess.run([\"ls\", \"-la\"], capture_output=True, text=True)\nprint(r.stdout)\nمع معالجة فشل الأمر: r.returncode != 0 يعني أن الأمر لم ينجح.",
+  "en": {
+   "q": "How do I run a terminal command from Python?",
+   "re": "What is the subprocess way to execute a shell command?",
+   "v": "I want to run a command from my code and capture output",
+   "answer": "Use subprocess — avoid shell=True with user input:\nimport subprocess\nr = subprocess.run([\"ls\", \"-la\"], capture_output=True, text=True)\nprint(r.stdout)\nCheck r.returncode != 0 for command failure."
+  }
+ },
+ {
+  "q": "معاملات سطر الأوامر",
+  "re": "كيف أقرأ معاملات سطر الأوامر في بايثون؟",
+  "v": "ما طريقة أخذ مدخلات عند تشغيل السكربت؟",
+  "v3": "أريد سكربت يقبل باراميترات من الطرفية",
+  "tokens": [
+   "argv"
+  ],
+  "answer": "استخدم sys.argv أو argparse للواجهات الأكبر:\nimport sys\nprint(sys.argv)  # [\"script.py\", \"المدخل الأول\"]\nargparse عند الحاجة لأسماء وخيارات: from argparse import ArgumentParser",
+  "en": {
+   "q": "How do I read command-line arguments in Python?",
+   "re": "What is the way to accept script arguments?",
+   "v": "I want my script to take parameters from the terminal",
+   "answer": "Use sys.argv or argparse for richer interfaces:\nimport sys\nprint(sys.argv)  # [\"script.py\", \"first-arg\"]\nFor named options: from argparse import ArgumentParser"
+  }
+ },
+ {
+  "q": "تسجيل الأحداث logging",
+  "re": "كيف أسجل الأحداث في برنامج بايثون؟",
+  "v": "ما طريقة استخدام logging بدل الطباعة؟",
+  "v3": "أريد سجل أخطاء منظما في مشروعي",
+  "tokens": [
+   "logging"
+  ],
+  "answer": "استخدم وحدة logging بدل الطباعة العشوائية:\nimport logging\nlogging.basicConfig(level=logging.INFO,\n                    format=\"%(asctime)s %(levelname)s %(message)s\")\nlogging.info(\"بدأ التشغيل\")\nlogging.error(\"فشل الاتصال\", exc_info=True)",
+  "en": {
+   "q": "How do I use logging in Python?",
+   "re": "What is the proper way to log events?",
+   "v": "I want structured logs instead of prints",
+   "answer": "Use the logging module:\nimport logging\nlogging.basicConfig(level=logging.INFO,\n                    format=\"%(asctime)s %(levelname)s %(message)s\")\nlogging.info(\"started\")\nlogging.error(\"connection failed\", exc_info=True)"
+  }
+ },
+ {
+  "q": "المولدات في بايثون",
+  "re": "كيف أستخدم yield والمولدات في بايثون؟",
+  "v": "ما فائدة المولدات مع البيانات الكبيرة؟",
+  "v3": "أريد قراءة ملف ضخم بدون استهلاك الذاكرة",
+  "tokens": [
+   "yield"
+  ],
+  "answer": "المولد ينتج قيماً عند الطلب بدل تخزينها كلها:\ndef read_big(path):\n    with open(path, encoding=\"utf-8\") as f:\n        for line in f:\n            yield line.strip()\nfor line in read_big(\"data.log\"):\n    process(line)",
+  "en": {
+   "q": "How do generators and yield work in Python?",
+   "re": "Why use a generator for large data?",
+   "v": "I want to stream a huge file without loading memory",
+   "answer": "A generator produces values on demand:\ndef read_big(path):\n    with open(path, encoding=\"utf-8\") as f:\n        for line in f:\n            yield line.strip()\nfor line in read_big(\"data.log\"):\n    process(line)"
+  }
+ },
+ {
+  "q": "المزخرفات في بايثون",
+  "re": "كيف أكتب مزخرفًا decorator في بايثون؟",
+  "v": "ما طريقة تغليف دالة بدالة أخرى؟",
+  "v3": "أريد قياس زمن أي دالة تلقائياً",
+  "tokens": [
+   "decorator"
+  ],
+  "answer": "المزخرف يغلّف الدالة دون تعديلها:\nimport time\ndef timed(fn):\n    def inner(*args, **kw):\n        t0 = time.time()\n        out = fn(*args, **kw)\n        print(f\"{fn.__name__}: {time.time() - t0:.2f}s\")\n        return out\n    return inner\n@timed\ndef work():\n    return sum(range(1000000))",
+  "en": {
+   "q": "How do I write a decorator in Python?",
+   "re": "What is the decorator syntax for wrapping functions?",
+   "v": "I want to time any function automatically",
+   "answer": "A decorator wraps a function without changing it:\nimport time\ndef timed(fn):\n    def inner(*args, **kw):\n        t0 = time.time()\n        out = fn(*args, **kw)\n        print(f\"{fn.__name__}: {time.time() - t0:.2f}s\")\n        return out\n    return inner\n@timed\ndef work():\n    return sum(range(1000000))"
+  }
+ },
+ {
+  "q": "تلميحات الأنواع",
+  "re": "كيف أضيف تلميحات الأنواع type hints في بايثون؟",
+  "v": "ما صيغة تحديد نوع الوسائط والعودة؟",
+  "v3": "أريد توقيع دوال واضحاً في مشروعي",
+  "tokens": [
+   "hints"
+  ],
+  "answer": "التلميحات توثيق وتحليل ثابت (mypy) — لا تفرض وقت التشغيل:\ndef total(items: list[int], tax: float = 0.0) -> float:\n    return sum(items) * (1 + tax)\nقاموس اسم -> عمر: def users(d: dict[str, int]) -> None:",
+  "en": {
+   "q": "How do I add type hints in Python?",
+   "re": "What is the type hint syntax for arguments?",
+   "v": "I want clear function signatures in my project",
+   "answer": "Hints document code and power static analysis (mypy); they are not enforced at runtime:\ndef total(items: list[int], tax: float = 0.0) -> float:\n    return sum(items) * (1 + tax)\nDict form: def users(d: dict[str, int]) -> None:"
+  }
+ },
+ {
+  "q": "طلب HTTP في بايثون",
+  "re": "كيف أرسل طلب HTTP GET في بايثون؟",
+  "v": "ما طريقة قراءة API بrequests؟",
+  "v3": "أريد جلب بيانات من API ببايثون",
+  "tokens": [
+   "requests"
+  ],
+  "answer": "استخدم requests مع فحص الحالة:\nimport requests\nr = requests.get(\"https://api.example.com/data\", timeout=10)\nr.raise_for_status()\ndata = r.json()\nلإرسال بيانات: requests.post(url, json={\"a\": 1})",
+  "en": {
+   "q": "How do I send an HTTP GET request in Python?",
+   "re": "What is the requests way to call an API?",
+   "v": "I want to fetch data from an API",
+   "answer": "Use requests and check the status:\nimport requests\nr = requests.get(\"https://api.example.com/data\", timeout=10)\nr.raise_for_status()\ndata = r.json()\nPosting: requests.post(url, json={\"a\": 1})"
+  }
+ },
+ {
+  "q": "البرمجة غير المتزامنة",
+  "re": "كيف أستخدم async وawait في بايثون؟",
+  "v": "ما طريقة تشغيل مهام متزامنة بasyncio؟",
+  "v3": "أريد جلب عدة ملفات في نفس الوقت",
+  "tokens": [
+   "asyncio"
+  ],
+  "answer": "التزامن يفيد في مهام الانتظار (شبكة/ملفات):\nimport asyncio\nasync def fetch(name):\n    await asyncio.sleep(1)\n    return name\nasync def main():\n    out = await asyncio.gather(fetch(\"a\"), fetch(\"b\"))\n    print(out)\nasyncio.run(main())",
+  "en": {
+   "q": "How do I use async and await in Python?",
+   "re": "What is the asyncio pattern for concurrent tasks?",
+   "v": "I want to fetch several resources concurrently",
+   "answer": "Async helps for waiting-heavy work (network/disk):\nimport asyncio\nasync def fetch(name):\n    await asyncio.sleep(1)\n    return name\nasync def main():\n    out = await asyncio.gather(fetch(\"a\"), fetch(\"b\"))\n    print(out)\nasyncio.run(main())"
+  }
+ },
+ {
+  "q": "التعبير النمطي في بايثون",
+  "re": "كيف أستخدم التعبير النمطي regex في بايثون؟",
+  "v": "ما طريقة مطابقة نص بنمط؟",
+  "v3": "أريد استخراج الأرقام من نص",
+  "tokens": [
+   "regex"
+  ],
+  "answer": "استخدم re مع مجموعات:\nimport re\nm = re.search(r\"(\\d{4})-(\\d{2})\", \"التاريخ 2026-11\")\nif m:\n    print(m.group(1), m.group(2))\nاستبدال: re.sub(r\"\\s+\", \" \", text)",
+  "en": {
+   "q": "How do I use regex in Python?",
+   "re": "What is the re module way to match a pattern?",
+   "v": "I want to extract numbers from text",
+   "answer": "Use re with capture groups:\nimport re\nm = re.search(r\"(\\d{4})-(\\d{2})\", \"date 2026-11\")\nif m:\n    print(m.group(1), m.group(2))\nReplace: re.sub(r\"\\s+\", \" \", text)"
+  }
+ },
+ {
+  "q": "قاعدة بيانات SQLite",
+  "re": "كيف أستخدم قاعدة بيانات SQLite في بايثون؟",
+  "v": "ما طريقة إنشاء جدول وإدراج صفوف؟",
+  "v3": "أريد تخزين بيانات محلياً بدون سيرفر",
+  "tokens": [
+   "sqlite"
+  ],
+  "answer": "SQLite مدمجة في بايثون:\nimport sqlite3\ncon = sqlite3.connect(\"app.db\")\ncur = con.cursor()\ncur.execute(\"CREATE TABLE IF NOT EXISTS users (name TEXT, age INT)\")\ncur.execute(\"INSERT INTO users VALUES (?, ?)\", (\"سارة\", 25))\ncon.commit()\nfor row in cur.execute(\"SELECT * FROM users\"):\n    print(row)",
+  "en": {
+   "q": "How do I use SQLite in Python?",
+   "re": "What is the sqlite3 way to create a table?",
+   "v": "I want local storage without a server",
+   "answer": "SQLite ships with Python:\nimport sqlite3\ncon = sqlite3.connect(\"app.db\")\ncur = con.cursor()\ncur.execute(\"CREATE TABLE IF NOT EXISTS users (name TEXT, age INT)\")\ncur.execute(\"INSERT INTO users VALUES (?, ?)\", (\"Sara\", 25))\ncon.commit()\nfor row in cur.execute(\"SELECT * FROM users\"):\n    print(row)"
+  }
+ },
+ {
+  "q": "تحليل التاريخ في بايثون",
+  "re": "كيف أحوّل نصاً إلى تاريخ في بايثون؟",
+  "v": "ما صيغة strptime وstrftime؟",
+  "v3": "أريد قراءة تاريخ من نص ثم طباعته بصيغة أخرى",
+  "tokens": [
+   "strptime"
+  ],
+  "answer": "strptime للقراءة وstrftime للتنسيق:\nfrom datetime import datetime\nd = datetime.strptime(\"2026-11-21\", \"%Y-%m-%d\")\nprint(d.strftime(\"%d/%m/%Y\"))\nاليوم: datetime.now().strftime(\"%Y-%m-%d %H:%M\")",
+  "en": {
+   "q": "How do I parse a date string in Python?",
+   "re": "What are strptime and strftime for dates?",
+   "v": "I want to read a date then print it differently",
+   "answer": "strptime parses, strftime formats:\nfrom datetime import datetime\nd = datetime.strptime(\"2026-11-21\", \"%Y-%m-%d\")\nprint(d.strftime(\"%d/%m/%Y\"))\nNow: datetime.now().strftime(\"%Y-%m-%d %H:%M\")"
+  }
+ },
+ {
+  "q": "متغيرات البيئة في بايثون",
+  "re": "كيف أقرأ متغير بيئة في بايثون؟",
+  "v": "ما الطريقة الآمنة لمفاتيح API؟",
+  "v3": "أريد إخفاء مفتاح API عن الكود",
+  "tokens": [
+   "environ"
+  ],
+  "answer": "المفاتيح تُقرأ من البيئة لا من الكود:\nimport os\nkey = os.environ.get(\"MY_API_KEY\")\nif not key:\n    raise SystemExit(\"اضبط MY_API_KEY أولاً\")\nلا تضع المفاتيح في ملفات الالتزام — أدرجها في .env محلي أو أسرار النشر.",
+  "en": {
+   "q": "How do I read environment variables in Python?",
+   "re": "What is the safe way to store API keys?",
+   "v": "I want to keep my API key out of the code",
+   "answer": "Read secrets from the environment, never the code:\nimport os\nkey = os.environ.get(\"MY_API_KEY\")\nif not key:\n    raise SystemExit(\"set MY_API_KEY first\")\nNever commit keys — use a local .env or deploy secrets."
+  }
+ },
+ {
+  "q": "خريطة ومرشح في جافاسكربت",
+  "re": "كيف أستخدم map وfilter في جافاسكربت؟",
+  "v": "ما طريقة تحويل مصفوفة في JS؟",
+  "v3": "أريد تحويل وفلترة قائمة أرقام",
+  "tokens": [
+   "map"
+  ],
+  "answer": "المصفوفات تحول بmap وتنقى بfilter:\nconst nums = [1, 2, 3, 4];\nconst doubled = nums.map(n => n * 2);\nconst evens = nums.filter(n => n % 2 === 0);\nالجمع: nums.reduce((a, b) => a + b, 0)",
+  "en": {
+   "q": "How do I use map and filter in JavaScript?",
+   "re": "What is the JS way to transform an array?",
+   "v": "I want to transform and filter a list of numbers",
+   "answer": "Arrays transform with map and filter:\nconst nums = [1, 2, 3, 4];\nconst doubled = nums.map(n => n * 2);\nconst evens = nums.filter(n => n % 2 === 0);\nSum: nums.reduce((a, b) => a + b, 0)"
+  }
+ },
+ {
+  "q": "طلب fetch في جافاسكربت",
+  "re": "كيف أجلب بيانات API بfetch في جافاسكربت؟",
+  "v": "ما طريقة الانتظار والتحويل بJSON؟",
+  "v3": "أريد قراءة واجهة برمجية من المتصفح",
+  "tokens": [
+   "fetch"
+  ],
+  "answer": "fetch يرجع وعداً — انتظره ثم حوّل:\nconst r = await fetch(\"https://api.example.com/data\");\nif (!r.ok) throw new Error(\"فشل الطلب\");\nconst data = await r.json();\nداخل دالة عادية: ثمّة .then((r) => r.json()) — لكن async/await أوضح.",
+  "en": {
+   "q": "How do I fetch API data in JavaScript?",
+   "re": "What is the fetch await json pattern?",
+   "v": "I want to read an API from the browser",
+   "answer": "fetch returns a promise — await it, then parse:\nconst r = await fetch(\"https://api.example.com/data\");\nif (!r.ok) throw new Error(\"request failed\");\nconst data = await r.json();\nIn a plain function use .then((r) => r.json()) — async/await is clearer."
+  }
+ },
+ {
+  "q": "التخزين المحلي في المتصفح",
+  "re": "كيف أحفظ بيانات في المتصفح بlocalStorage؟",
+  "v": "ما طريقة تخزين واسترجاع قيمة؟",
+  "v3": "أريد تذكر تفضيلات المستخدم بدون خادم",
+  "tokens": [
+   "localStorage"
+  ],
+  "answer": "التخزين المحلي يقبل نصوصاً فقط:\nlocalStorage.setItem(\"theme\", \"dark\");\nconst theme = localStorage.getItem(\"theme\");\nللكائنات: JSON.stringify ثم JSON.parse عند القراءة.",
+  "en": {
+   "q": "How do I save data with localStorage in the browser?",
+   "re": "What is the localStorage set get pattern?",
+   "v": "I want to remember user preferences without a server",
+   "answer": "localStorage stores strings only:\nlocalStorage.setItem(\"theme\", \"dark\");\nconst theme = localStorage.getItem(\"theme\");\nFor objects: JSON.stringify, then JSON.parse on read."
+  }
+ },
+ {
+  "q": "تشغيل عملية في الخلفية",
+  "re": "كيف أشغّل أمراً يعمل بعد إغلاق الطرفية؟",
+  "v": "ما طريقة nohup وtmux للعمليات الطويلة؟",
+  "v3": "أريد تدريبًا يستمر بعد قطع الاتصال",
+  "tokens": [
+   "nohup"
+  ],
+  "answer": "ثلاث طرق بحسب حاجتك:\nnohup python train.py > train.log 2>&1 &\ntmux new -s train   # جلسة تعود إليها: tmux attach -t train\nفي systemd: أعد وحدة خدمة للتشغيل الدائم — الأنسب للسيرفرات.",
+  "en": {
+   "q": "How do I keep a command running after closing the terminal?",
+   "re": "What is the nohup tmux way for long jobs?",
+   "v": "I want a training job to survive disconnects",
+   "answer": "Three ways by need:\nnohup python train.py > train.log 2>&1 &\ntmux new -s train   # reattach: tmux attach -t train\nFor servers: a systemd service unit is the durable option."
+  }
+ }
+]

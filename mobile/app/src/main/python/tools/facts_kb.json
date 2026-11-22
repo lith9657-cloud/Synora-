@@ -1,0 +1,1144 @@
+[
+ {
+  "q": "ما عاصمة السعودية؟",
+  "answer": "عاصمة السعودية هي الرياض.",
+  "tokens": [
+   "الرياض"
+  ],
+  "en": {
+   "q": "What is the capital of Saudi Arabia?",
+   "answer": "The capital of Saudi Arabia is Riyadh."
+  }
+ },
+ {
+  "q": "ما عاصمة مصر؟",
+  "answer": "عاصمة مصر هي القاهرة.",
+  "tokens": [
+   "القاهرة"
+  ],
+  "en": {
+   "q": "What is the capital of Egypt?",
+   "answer": "The capital of Egypt is Cairo."
+  }
+ },
+ {
+  "q": "ما عاصمة الإمارات؟",
+  "answer": "عاصمة الإمارات هي أبوظبي.",
+  "tokens": [
+   "أبوظبي",
+   "ابوظبي"
+  ],
+  "en": {
+   "q": "What is the capital of the UAE?",
+   "answer": "The capital of the UAE is Abu Dhabi."
+  }
+ },
+ {
+  "q": "ما عاصمة الأردن؟",
+  "answer": "عاصمة الأردن هي عمّان.",
+  "tokens": [
+   "عمّان",
+   "عمان"
+  ],
+  "en": {
+   "q": "What is the capital of Jordan?",
+   "answer": "The capital of Jordan is Amman."
+  }
+ },
+ {
+  "q": "ما عاصمة الكويت؟",
+  "answer": "عاصمة الكويت هي مدينة الكويت.",
+  "tokens": [
+   "الكويت"
+  ],
+  "en": {
+   "q": "What is the capital of Kuwait?",
+   "answer": "The capital of Kuwait is Kuwait City."
+  }
+ },
+ {
+  "q": "ما عاصمة قطر؟",
+  "answer": "عاصمة قطر هي الدوحة.",
+  "tokens": [
+   "الدوحة",
+   "الدوحه"
+  ],
+  "en": {
+   "q": "What is the capital of Qatar?",
+   "answer": "The capital of Qatar is Doha."
+  }
+ },
+ {
+  "q": "ما عاصمة البحرين؟",
+  "answer": "عاصمة البحرين هي المنامة.",
+  "tokens": [
+   "المنامة",
+   "المنامه"
+  ],
+  "en": {
+   "q": "What is the capital of Bahrain?",
+   "answer": "The capital of Bahrain is Manama."
+  }
+ },
+ {
+  "q": "ما عاصمة عُمان؟",
+  "answer": "عاصمة سلطنة عُمان هي مسقط.",
+  "tokens": [
+   "مسقط"
+  ],
+  "en": {
+   "q": "What is the capital of Oman?",
+   "answer": "The capital of Oman is Muscat."
+  }
+ },
+ {
+  "q": "ما عاصمة العراق؟",
+  "answer": "عاصمة العراق هي بغداد.",
+  "tokens": [
+   "بغداد"
+  ],
+  "en": {
+   "q": "What is the capital of Iraq?",
+   "answer": "The capital of Iraq is Baghdad."
+  }
+ },
+ {
+  "q": "ما عاصمة سوريا؟",
+  "answer": "عاصمة سوريا هي دمشق.",
+  "tokens": [
+   "دمشق"
+  ],
+  "en": {
+   "q": "What is the capital of Syria?",
+   "answer": "The capital of Syria is Damascus."
+  }
+ },
+ {
+  "q": "ما عاصمة لبنان؟",
+  "answer": "عاصمة لبنان هي بيروت.",
+  "tokens": [
+   "بيروت"
+  ],
+  "en": {
+   "q": "What is the capital of Lebanon?",
+   "answer": "The capital of Lebanon is Beirut."
+  }
+ },
+ {
+  "q": "ما عاصمة اليمن؟",
+  "answer": "عاصمة اليمن هي صنعاء.",
+  "tokens": [
+   "صنعاء",
+   "صنعا"
+  ],
+  "en": {
+   "q": "What is the capital of Yemen?",
+   "answer": "The capital of Yemen is Sanaa."
+  }
+ },
+ {
+  "q": "ما عاصمة المغرب؟",
+  "answer": "عاصمة المغرب هي الرباط.",
+  "tokens": [
+   "الرباط"
+  ],
+  "en": {
+   "q": "What is the capital of Morocco?",
+   "answer": "The capital of Morocco is Rabat."
+  }
+ },
+ {
+  "q": "ما عاصمة الجزائر؟",
+  "answer": "عاصمة الجزائر هي مدينة الجزائر.",
+  "tokens": [
+   "الجزائر"
+  ],
+  "en": {
+   "q": "What is the capital of Algeria?",
+   "answer": "The capital of Algeria is Algiers."
+  }
+ },
+ {
+  "q": "ما عاصمة تونس؟",
+  "answer": "عاصمة تونس هي مدينة تونس.",
+  "tokens": [
+   "تونس"
+  ],
+  "en": {
+   "q": "What is the capital of Tunisia?",
+   "answer": "The capital of Tunisia is Tunis."
+  }
+ },
+ {
+  "q": "ما عاصمة ليبيا؟",
+  "answer": "عاصمة ليبيا هي طرابلس.",
+  "tokens": [
+   "طرابلس"
+  ],
+  "en": {
+   "q": "What is the capital of Libya?",
+   "answer": "The capital of Libya is Tripoli."
+  }
+ },
+ {
+  "q": "ما عاصمة السودان؟",
+  "answer": "عاصمة السودان هي الخرطوم.",
+  "tokens": [
+   "الخرطوم"
+  ],
+  "en": {
+   "q": "What is the capital of Sudan?",
+   "answer": "The capital of Sudan is Khartoum."
+  }
+ },
+ {
+  "q": "ما عاصمة موريتانيا؟",
+  "answer": "عاصمة موريتانيا هي نواكشوط.",
+  "tokens": [
+   "نواكشوط"
+  ],
+  "en": {
+   "q": "What is the capital of Mauritania?",
+   "answer": "The capital of Mauritania is Nouakchott."
+  }
+ },
+ {
+  "q": "ما عاصمة الصومال؟",
+  "answer": "عاصمة الصومال هي مقديشو.",
+  "tokens": [
+   "مقديشو"
+  ],
+  "en": {
+   "q": "What is the capital of Somalia?",
+   "answer": "The capital of Somalia is Mogadishu."
+  }
+ },
+ {
+  "q": "ما عاصمة تركيا؟",
+  "answer": "عاصمة تركيا هي أنقرة — وليست إسطنبول.",
+  "tokens": [
+   "أنقرة",
+   "انقرة"
+  ],
+  "en": {
+   "q": "What is the capital of Turkey?",
+   "answer": "The capital of Turkey is Ankara."
+  }
+ },
+ {
+  "q": "ما عاصمة إيران؟",
+  "answer": "عاصمة إيران هي طهران.",
+  "tokens": [
+   "طهران"
+  ],
+  "en": {
+   "q": "What is the capital of Iran?",
+   "answer": "The capital of Iran is Tehran."
+  }
+ },
+ {
+  "q": "ما عاصمة باكستان؟",
+  "answer": "عاصمة باكستان هي إسلام آباد.",
+  "tokens": [
+   "إسلام",
+   "اسلام"
+  ],
+  "en": {
+   "q": "What is the capital of Pakistan?",
+   "answer": "The capital of Pakistan is Islamabad."
+  }
+ },
+ {
+  "q": "ما عاصمة الهند؟",
+  "answer": "عاصمة الهند هي نيودلهي.",
+  "tokens": [
+   "نيودلهي",
+   "دلهي"
+  ],
+  "en": {
+   "q": "What is the capital of India?",
+   "answer": "The capital of India is New Delhi."
+  }
+ },
+ {
+  "q": "ما عاصمة الصين؟",
+  "answer": "عاصمة الصين هي بكين.",
+  "tokens": [
+   "بكين"
+  ],
+  "en": {
+   "q": "What is the capital of China?",
+   "answer": "The capital of China is Beijing."
+  }
+ },
+ {
+  "q": "ما عاصمة اليابان؟",
+  "answer": "عاصمة اليابان هي طوكيو.",
+  "tokens": [
+   "طوكيو",
+   "توكيو"
+  ],
+  "en": {
+   "q": "What is the capital of Japan?",
+   "answer": "The capital of Japan is Tokyo."
+  }
+ },
+ {
+  "q": "ما عاصمة كوريا الجنوبية؟",
+  "answer": "عاصمة كوريا الجنوبية هي سيول.",
+  "tokens": [
+   "سيول"
+  ],
+  "en": {
+   "q": "What is the capital of South Korea?",
+   "answer": "The capital of South Korea is Seoul."
+  }
+ },
+ {
+  "q": "ما عاصمة إندونيسيا؟",
+  "answer": "عاصمة إندونيسيا هي جاكرتا.",
+  "tokens": [
+   "جاكرتا"
+  ],
+  "en": {
+   "q": "What is the capital of Indonesia?",
+   "answer": "The capital of Indonesia is Jakarta."
+  }
+ },
+ {
+  "q": "ما عاصمة ماليزيا؟",
+  "answer": "عاصمة ماليزيا هي كوالالمبور.",
+  "tokens": [
+   "كوالالمبور"
+  ],
+  "en": {
+   "q": "What is the capital of Malaysia?",
+   "answer": "The capital of Malaysia is Kuala Lumpur."
+  }
+ },
+ {
+  "q": "ما عاصمة روسيا؟",
+  "answer": "عاصمة روسيا هي موسكو.",
+  "tokens": [
+   "موسكو"
+  ],
+  "en": {
+   "q": "What is the capital of Russia?",
+   "answer": "The capital of Russia is Moscow."
+  }
+ },
+ {
+  "q": "ما عاصمة أوكرانيا؟",
+  "answer": "عاصمة أوكرانيا هي كييف.",
+  "tokens": [
+   "كييف"
+  ],
+  "en": {
+   "q": "What is the capital of Ukraine?",
+   "answer": "The capital of Ukraine is Kyiv."
+  }
+ },
+ {
+  "q": "ما عاصمة ألمانيا؟",
+  "answer": "عاصمة ألمانيا هي برلين — وليست ميونخ.",
+  "tokens": [
+   "برلين"
+  ],
+  "en": {
+   "q": "What is the capital of Germany?",
+   "answer": "The capital of Germany is Berlin."
+  }
+ },
+ {
+  "q": "ما عاصمة فرنسا؟",
+  "answer": "عاصمة فرنسا هي باريس.",
+  "tokens": [
+   "باريس"
+  ],
+  "en": {
+   "q": "What is the capital of France?",
+   "answer": "The capital of France is Paris."
+  }
+ },
+ {
+  "q": "ما عاصمة بريطانيا؟",
+  "answer": "عاصمة بريطانيا هي لندن.",
+  "tokens": [
+   "لندن"
+  ],
+  "en": {
+   "q": "What is the capital of the UK?",
+   "answer": "The capital of the UK is London."
+  }
+ },
+ {
+  "q": "ما عاصمة إيطاليا؟",
+  "answer": "عاصمة إيطاليا هي روما.",
+  "tokens": [
+   "روما"
+  ],
+  "en": {
+   "q": "What is the capital of Italy?",
+   "answer": "The capital of Italy is Rome."
+  }
+ },
+ {
+  "q": "ما عاصمة إسبانيا؟",
+  "answer": "عاصمة إسبانيا هي مدريد.",
+  "tokens": [
+   "مدريد"
+  ],
+  "en": {
+   "q": "What is the capital of Spain?",
+   "answer": "The capital of Spain is Madrid."
+  }
+ },
+ {
+  "q": "ما عاصمة أمريكا؟",
+  "answer": "عاصمة الولايات المتحدة هي واشنطن العاصمة — وليست نيويورك.",
+  "tokens": [
+   "واشنطن"
+  ],
+  "en": {
+   "q": "What is the capital of the USA?",
+   "answer": "The capital of the USA is Washington, D.C.."
+  }
+ },
+ {
+  "q": "ما عاصمة كندا؟",
+  "answer": "عاصمة كندا هي أوتاوا — وليست تورونتو.",
+  "tokens": [
+   "أوتاوا",
+   "اوتاوا"
+  ],
+  "en": {
+   "q": "What is the capital of Canada?",
+   "answer": "The capital of Canada is Ottawa."
+  }
+ },
+ {
+  "q": "ما عاصمة البرازيل؟",
+  "answer": "عاصمة البرازيل هي برازيليا — وليست ريو.",
+  "tokens": [
+   "برازيليا"
+  ],
+  "en": {
+   "q": "What is the capital of Brazil?",
+   "answer": "The capital of Brazil is Brasilia."
+  }
+ },
+ {
+  "q": "ما عاصمة الأرجنتين؟",
+  "answer": "عاصمة الأرجنتين هي بوينس آيرس.",
+  "tokens": [
+   "بوينس"
+  ],
+  "en": {
+   "q": "What is the capital of Argentina?",
+   "answer": "The capital of Argentina is Buenos Aires."
+  }
+ },
+ {
+  "q": "ما عاصمة أستراليا؟",
+  "answer": "عاصمة أستراليا هي كانبرا — وليست سيدني.",
+  "tokens": [
+   "كانبرا"
+  ],
+  "en": {
+   "q": "What is the capital of Australia?",
+   "answer": "The capital of Australia is Canberra."
+  }
+ },
+ {
+  "q": "ما عاصمة المكسيك؟",
+  "answer": "عاصمة المكسيك هي مدينة المكسيك.",
+  "tokens": [
+   "المكسيك"
+  ],
+  "en": {
+   "q": "What is the capital of Mexico?",
+   "answer": "The capital of Mexico is Mexico City."
+  }
+ },
+ {
+  "q": "ما عاصمة جنوب أفريقيا؟",
+  "answer": "العاصمة الإدارية لجنوب أفريقيا هي بريتوريا.",
+  "tokens": [
+   "بريتوريا"
+  ],
+  "en": {
+   "q": "What is the capital of South Africa?",
+   "answer": "The capital of South Africa is Pretoria."
+  }
+ },
+ {
+  "q": "ما عاصمة نيجيريا؟",
+  "answer": "عاصمة نيجيريا هي أبوجا.",
+  "tokens": [
+   "أبوجا",
+   "ابوجا"
+  ],
+  "en": {
+   "q": "What is the capital of Nigeria?",
+   "answer": "The capital of Nigeria is Abuja."
+  }
+ },
+ {
+  "q": "ما عاصمة كينيا؟",
+  "answer": "عاصمة كينيا هي نيروبي.",
+  "tokens": [
+   "نيروبي"
+  ],
+  "en": {
+   "q": "What is the capital of Kenya?",
+   "answer": "The capital of Kenya is Nairobi."
+  }
+ },
+ {
+  "q": "ما عاصمة أفغانستان؟",
+  "answer": "عاصمة أفغانستان هي كابل.",
+  "tokens": [
+   "كابل"
+  ],
+  "en": {
+   "q": "What is the capital of Afghanistan?",
+   "answer": "The capital of Afghanistan is Kabul."
+  }
+ },
+ {
+  "q": "ما أعلى قمة في العالم؟",
+  "answer": "أعلى قمة في العالم هي قمة إيفرست بارتفاع 8849 متراً تقريباً.",
+  "tokens": [
+   "إيفرست",
+   "ايفرست",
+   "8849"
+  ],
+  "en": {
+   "q": "What is the highest mountain in the world?",
+   "answer": "Mount Everest is the highest mountain in the world, at about 8,849 meters."
+  }
+ },
+ {
+  "q": "ما أطول نهر في العالم؟",
+  "answer": "أطول نهر في العالم هو نهر النيل بطول يقارب 6650 كم.",
+  "tokens": [
+   "النيل"
+  ],
+  "en": {
+   "q": "What is the longest river in the world?",
+   "answer": "The Nile (about 6,650 km) is traditionally counted as the longest river, with the Amazon close behind."
+  }
+ },
+ {
+  "q": "ما أكبر محيط في العالم؟",
+  "answer": "أكبر محيط في العالم هو المحيط الهادي.",
+  "tokens": [
+   "الهادي",
+   "الهادئ"
+  ],
+  "en": {
+   "q": "What is the largest ocean in the world?",
+   "answer": "The Pacific Ocean is the largest ocean in the world."
+  }
+ },
+ {
+  "q": "ما أكبر صحراء حارة في العالم؟",
+  "answer": "أكبر صحراء حارة في العالم هي الصحراء الكبرى في أفريقيا.",
+  "tokens": [
+   "الكبرى"
+  ],
+  "en": {
+   "q": "What is the largest hot desert in the world?",
+   "answer": "The Sahara is the largest hot desert in the world."
+  }
+ },
+ {
+  "q": "ما أكبر دولة في العالم بالمساحة؟",
+  "answer": "أكبر دولة في العالم بالمساحة هي روسيا.",
+  "tokens": [
+   "روسيا"
+  ],
+  "en": {
+   "q": "What is the largest country in the world by area?",
+   "answer": "Russia is the largest country in the world by area."
+  }
+ },
+ {
+  "q": "ما أصغر دولة في العالم؟",
+  "answer": "أصغر دولة في العالم هي الفاتيكان.",
+  "tokens": [
+   "الفاتيكان"
+  ],
+  "en": {
+   "q": "What is the smallest country in the world?",
+   "answer": "Vatican City is the smallest country in the world."
+  }
+ },
+ {
+  "q": "كم عدد القارات؟",
+  "answer": "عدد القارات سبع قارات: آسيا وأفريقيا وأوروبا وأمريكا الشمالية وأمريكا الجنوبية وأوقيانوسيا وأنتاركتيكا.",
+  "tokens": [
+   "سبع",
+   "7"
+  ],
+  "en": {
+   "q": "How many continents are there?",
+   "answer": "There are seven continents."
+  }
+ },
+ {
+  "q": "كم عدد كواكب المجموعة الشمسية؟",
+  "answer": "عدد كواكب المجموعة الشمسية ثمانية كواكب بعد إعادة تصنيف بلوتو.",
+  "tokens": [
+   "ثمانية",
+   "8"
+  ],
+  "en": {
+   "q": "How many planets are in the solar system?",
+   "answer": "There are eight planets in the solar system."
+  }
+ },
+ {
+  "q": "ما أكبر كواكب المجموعة الشمسية؟",
+  "answer": "أكبر كواكب المجموعة الشمسية هو كوكب المشتري.",
+  "tokens": [
+   "المشتري"
+  ],
+  "en": {
+   "q": "What is the largest planet in the solar system?",
+   "answer": "Jupiter is the largest planet in the solar system."
+  }
+ },
+ {
+  "q": "ما الكوكب الأحمر؟",
+  "answer": "الكوكب الأحمر هو المريخ، وسمي بذلك لون مغبرته الحديدية.",
+  "tokens": [
+   "المريخ"
+  ],
+  "en": {
+   "q": "Which planet is the red planet?",
+   "answer": "Mars is the red planet."
+  }
+ },
+ {
+  "q": "ما أقرب كوكب إلى الشمس؟",
+  "answer": "أقرب كواكب المجموعة الشمسية إلى الشمس هو عطارد.",
+  "tokens": [
+   "عطارد"
+  ],
+  "en": {
+   "q": "Which planet is closest to the Sun?",
+   "answer": "Mercury is the planet closest to the Sun."
+  }
+ },
+ {
+  "q": "من أول إنسان وصل إلى القمر؟",
+  "answer": "أول إنسان مشى على القمر هو نيل أرمسترونغ عام 1969 مع بعثة أبولو 11.",
+  "tokens": [
+   "أرمسترونغ",
+   "1969"
+  ],
+  "en": {
+   "q": "Who was the first human to walk on the Moon?",
+   "answer": "Neil Armstrong was the first human to walk on the Moon in 1969."
+  }
+ },
+ {
+  "q": "من أول رائد فضاء في التاريخ؟",
+  "answer": "أول رائد فضاء في التاريخ هو يوري غاغارين عام 1961.",
+  "tokens": [
+   "غاغارين",
+   "1961"
+  ],
+  "en": {
+   "q": "Who was the first astronaut in history?",
+   "answer": "Yuri Gagarin was the first astronaut in history (1961)."
+  }
+ },
+ {
+  "q": "من اخترع المصباح الكهربائي العملي؟",
+  "answer": "طور توماس إديسون أول مصباح كهربائي عملي تجارياً عام 1879.",
+  "tokens": [
+   "إديسون",
+   "1879"
+  ],
+  "en": {
+   "q": "Who invented the practical electric light bulb?",
+   "answer": "Thomas Edison developed the first practical electric light bulb."
+  }
+ },
+ {
+  "q": "من اخترع الهاتف؟",
+  "answer": "يُنسب اختراع الهاتف إلى ألكسندر غراهام بيل عام 1876.",
+  "tokens": [
+   "بيل"
+  ],
+  "en": {
+   "q": "Who invented the telephone?",
+   "answer": "Alexander Graham Bell invented the telephone."
+  }
+ },
+ {
+  "q": "من اخترع الطائرة؟",
+  "answer": "أول رحلة طائرة محركة قام بها الأخوان رايت عام 1903.",
+  "tokens": [
+   "رايت",
+   "1903"
+  ],
+  "en": {
+   "q": "Who invented the airplane?",
+   "answer": "The Wright brothers invented the airplane."
+  }
+ },
+ {
+  "q": "من مؤسس علم الجبر؟",
+  "answer": "مؤسس علم الجبر هو العالم المسلم الخوارزمي، ومن اسمه جاءت كلمة خوارزمية.",
+  "tokens": [
+   "الخوارزمي"
+  ],
+  "en": {
+   "q": "Who founded algebra?",
+   "answer": "Al-Khwarizmi founded algebra - the word itself comes from his book's title."
+  }
+ },
+ {
+  "q": "كم عدد أيام السنة العادية؟",
+  "answer": "عدد أيام السنة العادية 365 يوماً.",
+  "tokens": [
+   "365"
+  ],
+  "en": {
+   "q": "How many days are in a common year?",
+   "answer": "A common year has 365 days."
+  }
+ },
+ {
+  "q": "كم عدد أيام السنة الكبيسة؟",
+  "answer": "عدد أيام السنة الكبيسة 366 يوماً، إضافة فبراير يوماً واحداً.",
+  "tokens": [
+   "366"
+  ],
+  "en": {
+   "q": "How many days are in a leap year?",
+   "answer": "A leap year has 366 days."
+  }
+ },
+ {
+  "q": "كم عدد ساعات اليوم؟",
+  "answer": "عدد ساعات اليوم 24 ساعة.",
+  "tokens": [
+   "24"
+  ],
+  "en": {
+   "q": "How many hours are in a day?",
+   "answer": "A day has 24 hours."
+  }
+ },
+ {
+  "q": "كم عدد دقائق الساعة؟",
+  "answer": "عدد دقائق الساعة 60 دقيقة، وكل دقيقة 60 ثانية.",
+  "tokens": [
+   "60"
+  ],
+  "en": {
+   "q": "How many minutes are in an hour?",
+   "answer": "An hour has 60 minutes."
+  }
+ },
+ {
+  "q": "كم عدد أشهر السنة؟",
+  "answer": "عدد أشهر السنة 12 شهراً.",
+  "tokens": [
+   "12"
+  ],
+  "en": {
+   "q": "How many months are in a year?",
+   "answer": "A year has 12 months."
+  }
+ },
+ {
+  "q": "كم عدد أيام الأسبوع؟",
+  "answer": "عدد أيام الأسبوع سبعة أيام.",
+  "tokens": [
+   "سبعة",
+   "7"
+  ],
+  "en": {
+   "q": "How many days are in a week?",
+   "answer": "A week has 7 days."
+  }
+ },
+ {
+  "q": "كم يبلغ سرعة الضوء تقريباً؟",
+  "answer": "سرعة الضوء في الفراغ تقارب 300000 كيلومتر في الثانية.",
+  "tokens": [
+   "300000",
+   "الضوء"
+  ],
+  "en": {
+   "q": "What is the approximate speed of light?",
+   "answer": "The speed of light is about 300,000 km per second."
+  }
+ },
+ {
+  "q": "كم عدد عظام جسم الإنسان البالغ؟",
+  "answer": "عدد عظام جسم الإنسان البالغ 206 عظمة، ويلد الطفل بعظام أكثر تلتحم مع النمو.",
+  "tokens": [
+   "206"
+  ],
+  "en": {
+   "q": "How many bones are in an adult human body?",
+   "answer": "An adult human body has 206 bones."
+  }
+ },
+ {
+  "q": "كم عدد حجرات قلب الإنسان؟",
+  "answer": "قلب الإنسان له أربع حجرات: أذينان وبطينان.",
+  "tokens": [
+   "أربع",
+   "4"
+  ],
+  "en": {
+   "q": "How many chambers does the human heart have?",
+   "answer": "The human heart has four chambers."
+  }
+ },
+ {
+  "q": "ما أكبر عضو في جسم الإنسان؟",
+  "answer": "أكبر عضو في جسم الإنسان هو الجلد.",
+  "tokens": [
+   "الجلد"
+  ],
+  "en": {
+   "q": "What is the largest organ in the human body?",
+   "answer": "The skin is the largest organ in the human body."
+  }
+ },
+ {
+  "q": "كم عدد حواس الإنسان الأساسية؟",
+  "answer": "الحواس الأساسية للإنسان خمسة: البصر والسمع والشم والتذوق واللمس.",
+  "tokens": [
+   "خمسة",
+   "5"
+  ],
+  "en": {
+   "q": "How many basic human senses are there?",
+   "answer": "The five basic human senses are sight, hearing, smell, taste, and touch."
+  }
+ },
+ {
+  "q": "ما أطول سور بناه الإنسان؟",
+  "answer": "أشهر وأطول سور شيّده الإنسان هو سور الصين العظيم.",
+  "tokens": [
+   "الصين"
+  ],
+  "en": {
+   "q": "What is the longest wall ever built?",
+   "answer": "The Great Wall of China is the longest wall ever built."
+  }
+ },
+ {
+  "q": "كم عدد عجائب الدنيا السبع؟",
+  "answer": "عجائب الدنيا السبع القديمة أشهرها أهرامات الجيزة الباقية حتى اليوم.",
+  "tokens": [
+   "الجيزة",
+   "سبع"
+  ],
+  "en": {
+   "q": "How many wonders of the ancient world were there?",
+   "answer": "There were seven wonders of the ancient world."
+  }
+ },
+ {
+  "q": "أين تقع أهرامات الجيزة؟",
+  "answer": "تقع أهرامات الجيزة في مصر على حدود الجيزة والقاهرة.",
+  "tokens": [
+   "مصر"
+  ],
+  "en": {
+   "q": "Where are the Giza Pyramids located?",
+   "answer": "The Giza Pyramids are located in Egypt, on the outskirts of Cairo."
+  }
+ },
+ {
+  "q": "أين تقع الكعبة المشرفة؟",
+  "answer": "تقع الكعبة المشرفة في مكة المكرمة بالسعودية، وهي قبلة المسلمين.",
+  "tokens": [
+   "مكة"
+  ],
+  "en": {
+   "q": "Where is the Kaaba located?",
+   "answer": "The Kaaba is located in the Grand Mosque in Makkah, Saudi Arabia."
+  }
+ },
+ {
+  "q": "أين يقع المسجد النبوي؟",
+  "answer": "يقع المسجد النبوي الشريف في المدينة المنورة بالسعودية.",
+  "tokens": [
+   "المدينة"
+  ],
+  "en": {
+   "q": "Where is the Prophet's Mosque located?",
+   "answer": "The Prophet's Mosque is located in Madinah, Saudi Arabia."
+  }
+ },
+ {
+  "q": "ما أقدم جامعة ما زالت تعمل؟",
+  "answer": "أقدم جامعة ما زالت تعمل هي جامعة القرويين في فاس بالمغرب، أسست عام 859م.",
+  "tokens": [
+   "القرويين",
+   "859"
+  ],
+  "en": {
+   "q": "What is the oldest university still operating?",
+   "answer": "Al-Qarawiyyin in Fez, Morocco (founded 859 AD) is the oldest continuously operating university."
+  }
+ },
+ {
+  "q": "ما اللغة الرسمية للبرازيل؟",
+  "answer": "اللغة الرسمية للبرازيل هي البرتغالية.",
+  "tokens": [
+   "البرتغالية"
+  ],
+  "en": {
+   "q": "What is the official language of Brazil?",
+   "answer": "Portuguese is the official language of Brazil."
+  }
+ },
+ {
+  "q": "ما عملة اليابان؟",
+  "answer": "عملة اليابان هي الين.",
+  "tokens": [
+   "الين"
+  ],
+  "en": {
+   "q": "What is Japan's currency?",
+   "answer": "Japan's currency is the yen."
+  }
+ },
+ {
+  "q": "ما عملة أمريكا؟",
+  "answer": "عملة الولايات المتحدة هي الدولار الأمريكي.",
+  "tokens": [
+   "الدولار"
+  ],
+  "en": {
+   "q": "What is the currency of the USA?",
+   "answer": "The currency of the USA is the US dollar."
+  }
+ },
+ {
+  "q": "ما عملة بريطانيا؟",
+  "answer": "عملة بريطانيا هي الجنيه الإسترليني.",
+  "tokens": [
+   "الجنيه"
+  ],
+  "en": {
+   "q": "What is the currency of the UK?",
+   "answer": "The currency of the UK is the pound sterling."
+  }
+ },
+ {
+  "q": "ما عملة دول الاتحاد الأوروبي؟",
+  "answer": "عملة معظم دول الاتحاد الأوروبي هي اليورو.",
+  "tokens": [
+   "اليورو"
+  ],
+  "en": {
+   "q": "What is the currency of EU countries?",
+   "answer": "The euro is the currency of EU countries that adopted it."
+  }
+ },
+ {
+  "q": "ما أسرع حيوان بري؟",
+  "answer": "أسرع حيوان بري هو الفهد الصياد، ويصل إلى نحو 110 كم/ساعة.",
+  "tokens": [
+   "الفهد"
+  ],
+  "en": {
+   "q": "What is the fastest land animal?",
+   "answer": "The cheetah is the fastest land animal."
+  }
+ },
+ {
+  "q": "ما أكبر حيوان في العالم؟",
+  "answer": "أكبر حيوان في العالم هو الحوت الأزرق.",
+  "tokens": [
+   "الحوت"
+  ],
+  "en": {
+   "q": "What is the largest animal in the world?",
+   "answer": "The blue whale is the largest animal in the world."
+  }
+ },
+ {
+  "q": "ما أكبر طائر في العالم؟",
+  "answer": "أكبر طائر في العالم هو النعامة، وهي طائر لا يطير.",
+  "tokens": [
+   "النعامة"
+  ],
+  "en": {
+   "q": "What is the largest bird in the world?",
+   "answer": "The ostrich is the largest bird in the world."
+  }
+ },
+ {
+  "q": "ما أطول حيوان في العالم؟",
+  "answer": "أطول حيوان في العالم هو الزرافة، يبلغ طولها حتى 5.5 أمتار.",
+  "tokens": [
+   "الزرافة"
+  ],
+  "en": {
+   "q": "What is the longest animal in the world?",
+   "answer": "The blue whale is the longest animal, and among invertebrates the lion's mane jellyfish is longest."
+  }
+ },
+ {
+  "q": "ما مكان ميلاد عمر بن الخطاب؟",
+  "answer": "وُلد عمر بن الخطاب في مكة، وقد هاجر وشارك في كل غزوة مع النبي محمد.",
+  "tokens": [
+   "مكة"
+  ],
+  "en": {
+   "q": "Where was Umar ibn al-Khattab born?",
+   "answer": "Umar ibn al-Khattab was born in Makkah."
+  }
+ },
+ {
+  "q": "من صاحب نظرية النسبية؟",
+  "answer": "صاحب النسبية العامة والخاصة هو ألبرت أينشتاين.",
+  "tokens": [
+   "أينشتاين"
+  ],
+  "en": {
+   "q": "Who came up with the theory of relativity?",
+   "answer": "Albert Einstein came up with the theory of relativity."
+  }
+ },
+ {
+  "q": "من رائد الطب القديم ابن سينا أم الحنان؟",
+  "answer": "ابن سينا صاحب القانون في الطب، أحد أعظم أطباء التاريخ.",
+  "tokens": [
+   "ابن سينا"
+  ],
+  "en": {
+   "q": "Who was the pioneer physician of the old world, Ibn Sina or Al-Hanan?",
+   "answer": "Ibn Sina (Avicenna) is the pioneer physician - his Canon of Medicine taught in Europe for centuries."
+  }
+ },
+ {
+  "q": "من اخترع البطارية الكهربائية؟",
+  "answer": "اخترع ألساندرو فولتا أول بطارية كهربائية عام 1800، وسُمي الفولت باسمه.",
+  "tokens": [
+   "فولتا"
+  ],
+  "en": {
+   "q": "Who invented the electric battery?",
+   "answer": "Alessandro Volta invented the electric battery."
+  }
+ },
+ {
+  "q": "ما عدد النوم الموصى به للكبار؟",
+  "answer": "النوم الموصى به للكبار 7 إلى 9 ساعات كل ليلة.",
+  "tokens": [
+   "7",
+   "9"
+  ],
+  "en": {
+   "q": "How much sleep is recommended for adults?",
+   "answer": "About 7 to 9 hours of sleep per night is recommended for adults."
+  }
+ },
+ {
+  "q": "ما أشهر عملة رقمية؟",
+  "answer": "أشهر العملات الرقمية هي البيتكوين، ظهرت عام 2009.",
+  "tokens": [
+   "البيتكوين",
+   "2009"
+  ],
+  "en": {
+   "q": "What is the most famous digital currency?",
+   "answer": "Bitcoin is the most famous digital currency."
+  }
+ },
+ {
+  "q": "ما أقدم حضارة معروفة في وادي النيل؟",
+  "answer": "الحضارة المصرية القديمة من أقدم حضارات وادي النيل الموثقة.",
+  "tokens": [
+   "المصرية"
+  ],
+  "en": {
+   "q": "What is the oldest known civilization in the Nile valley?",
+   "answer": "Ancient Egypt is the oldest known civilization in the Nile valley."
+  }
+ },
+ {
+  "q": "ما عدد اللاعبين في فريق كرة القدم؟",
+  "answer": "عدد اللاعبين في فريق كرة القدم 11 لاعباً بما فيهم الحارس.",
+  "tokens": [
+   "11"
+  ],
+  "en": {
+   "q": "How many players are on a football team on the pitch?",
+   "answer": "A football team fields 11 players on the pitch."
+  }
+ },
+ {
+  "q": "كم مدة مباراة كرة القدم؟",
+  "answer": "مدة مباراة كرة القدم 90 دقيقة موزعة على شوطين.",
+  "tokens": [
+   "90"
+  ],
+  "en": {
+   "q": "How long is a football match?",
+   "answer": "A football match lasts 90 minutes plus stoppage time."
+  }
+ },
+ {
+  "q": "ما أكبر مؤتمر تقني للمطورين؟",
+  "answer": "من أكبر تجمعات المطورين عالمياً منصات GitHub والمؤتمرات الكبرى مثل Google I/O.",
+  "tokens": [
+   "GitHub"
+  ],
+  "en": {
+   "q": "What is the biggest tech conference for developers?",
+   "answer": "Google I/O is among the biggest developer tech conferences."
+  }
+ },
+ {
+  "q": "ما أول هاتف ذكي تجاري واسع الانتشار؟",
+  "answer": "الآيفون من أبل عام 2007 هو أول هاتف ذكي تجاري واسع الانتشار بشاشة لمس كاملة.",
+  "tokens": [
+   "2007",
+   "الآيفون",
+   "الايفون"
+  ],
+  "en": {
+   "q": "What was the first widely-sold smartphone?",
+   "answer": "The iPhone (2007) was the first widely-sold smartphone that defined the category."
+  }
+ },
+ {
+  "q": "ما يرمز له الاختصار HTTP؟",
+  "answer": "HTTP هو بروتوكول نقل النص التشعبي، أساس تبادل صفحات الويب.",
+  "tokens": [
+   "بروتوكول"
+  ],
+  "en": {
+   "q": "What does HTTP stand for?",
+   "answer": "HTTP stands for HyperText Transfer Protocol - the web's data protocol."
+  }
+ },
+ {
+  "q": "ما أول لغة برمجة؟",
+  "answer": "من أوائل لغات البرمجة العملية لغة فورتران عام 1957، وتسبقها أفكار باباج المحللة.",
+  "tokens": [
+   "فورتران",
+   "1957"
+  ],
+  "en": {
+   "q": "What was the first programming language?",
+   "answer": "Plankalkul (Konrad Zuse, 1940s) is often credited as the first designed programming language; FORTRAN was the first widely used one."
+  }
+ }
+]
